@@ -1,395 +1,326 @@
 <!DOCTYPE html>
-<html lang="ha">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BLACKRACK AI BLOCKCHAIN - P2P INFINITY YAFI BINANCE - BRB + UGAS AI - DUAL TOKEN - FUTURE AI COIN</title>
+<title>BLACKRACK AI BLOCKCHAIN - AI ROBOT - Owner Golden diamond 9 - BRB + UGAS AI - P2P Infinity</title>
 <style>
-body{
-  background:#000;
-  background-image: radial-gradient(circle at 20% 30%, rgba(0,255,255,0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(255,0,255,0.15) 0%, transparent 40%), linear-gradient(180deg, #000 0%, #0a0a1a 50%, #000 100%);
-  color:#0ff;font-family:monospace;padding:10px;margin:0;overflow-x:hidden
-}
-h1,h2{color:#ffd700;text-align:center;border:2px solid #0ff;padding:10px;text-shadow:0 0 15px #0ff,0 0 30px #f0f;background:rgba(0,0,0,0.7);backdrop-filter:blur(5px)}
-.box{border:2px solid #0ff;padding:15px;margin:15px 0;background:rgba(17,17,17,0.85);backdrop-filter:blur(8px);box-shadow:0 0 25px rgba(0,255,255,0.4)}
-.box-yellow{border-color:#ff0;color:#ff0}.box-red{border-color:#f00;color:#ff5555}.box-gold{border-color:#ffd700;color:#ffd700;background:rgba(34,34,17,0.85)}
-.box-dual{border-color:#0f0;color:#0f0;background:rgba(17,34,17,0.8)}.box-ai{border-color:#f0f;color:#f0f;background:rgba(34,17,34,0.8);box-shadow:0 0 35px rgba(255,0,255,0.7);animation:glow 2s infinite}
-.box-p2p{border-color:#0ff;color:#0ff;background:rgba(17,34,51,0.9);box-shadow:0 0 40px rgba(0,255,255,0.6);animation:glowP2P 2s infinite}
-@keyframes glow{0%{box-shadow:0 0 20px rgba(255,0,255,0.6)}50%{box-shadow:0 0 40px rgba(255,0,255,0.9)}100%{box-shadow:0 0 20px rgba(255,0,255,0.6)}}
-@keyframes glowP2P{0%{box-shadow:0 0 20px rgba(0,255,255,0.6)}50%{box-shadow:0 0 50px rgba(0,255,255,1)}100%{box-shadow:0 0 20px rgba(0,255,255,0.6)}}
-button{background:#0ff;color:#000;border:none;padding:8px 12px;margin:5px;cursor:pointer;font-weight:bold;transition:0.3s}
-button:hover{background:#ffd700;transform:scale(1.05);box-shadow:0 0 15px #ffd700}
-button.gold{background:#ffd700;animation:pulse 1.5s infinite}button.yellow{background:#ff0}button.red{background:#f00;color:#fff}button.green{background:#0f0;color:#000}button.pink{background:#f0f;color:#fff;animation:glow 1s infinite}button.cyan{background:#0ff;color:#000;animation:glowP2P 1s infinite;font-size:14px}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
-#log{max-height:400px;overflow:auto;border:1px solid #333;padding:10px;background:#000;margin-top:10px;font-size:11px}
-input,select,textarea{padding:6px;margin:5px;background:#222;color:#0ff;border:1px solid #0ff}
-#blockchain-canvas{width:100%;height:250px;background:#000;border:2px solid #0ff;margin:10px 0;box-shadow:0 0 20px #0ff}
-#ai-chat-box{max-height:350px;overflow:auto;border:2px solid #f0f;padding:10px;background:#111;margin:10px 0}
-.ai-message{background:#221122;border-left:3px solid #f0f;padding:8px;margin:8px 0}.user-message{background:#112211;border-left:3px solid #0f0;padding:8px;margin:8px 0;text-align:right}
-#p2p-orders{max-height:500px;overflow:auto;border:2px solid #0ff;padding:10px;background:#000;margin:10px 0}
-.p2p-order{background:rgba(17,34,51,0.9);border-left:4px solid #0ff;padding:10px;margin:10px 0;transition:0.3s}
-.p2p-order:hover{background:rgba(0,255,255,0.1);transform:scale(1.01);box-shadow:0 0 15px rgba(0,255,255,0.5)}
-.p2p-buy{border-left-color:#0f0}.p2p-sell{border-left-color:#f00}
-.profile-card{background:rgba(34,17,34,0.8);border:2px solid #f0f;padding:15px;margin:10px 0;display:flex;gap:15px;align-items:center}
-.badge{background:#ffd700;color:#000;padding:2px 6px;margin:2px;border-radius:3px;font-size:10px;font-weight:bold}
+:root{--bg:#0a0a0a;--card:#111;--border:#222;--gold:#d4af37;--cyan:#00e5ff;--purple:#a855f7;--green:#22c55e;--red:#ef4444;--text:#e5e5e5;--muted:#888}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.6;padding:20px;max-width:1400px;margin:0 auto}
+h1,h2,h3{color:var(--gold);font-weight:600;letter-spacing:0.3px}
+.header{text-align:center;padding:50px 20px;border:1px solid var(--border);margin-bottom:24px;background:linear-gradient(135deg,#111 0%,#1a1a0a 100%);border-radius:16px}
+.header h1{font-size:36px;margin-bottom:8px}
+.header p{color:var(--muted);margin-top:8px;font-size:14px}
+.owner-badge{display:inline-block;background:var(--gold);color:#000;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:800;margin-top:16px;letter-spacing:0.5px}
+.card{border:1px solid var(--border);background:var(--card);padding:24px;margin-bottom:20px;border-radius:12px}
+.card h2{font-size:18px;margin-bottom:16px;border-bottom:1px solid var(--border);padding-bottom:10px;display:flex;align-items:center;gap:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:900px){.grid{grid-template-columns:1fr} .header h1{font-size:24px}}
+button{background:var(--gold);color:#000;border:none;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer;margin:4px;font-size:13px;transition:all 0.2s}
+button:hover{opacity:0.9;transform:translateY(-1px)}button.secondary{background:transparent;border:1px solid var(--border);color:var(--text)}button.cyan{background:var(--cyan)}button.purple{background:var(--purple);color:#fff}
+input,select,textarea{background:#000;border:1px solid var(--border);color:var(--text);padding:10px;border-radius:8px;margin:4px;font-size:13px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+.robot-card{border:1px solid var(--border);background:#0f0f0f;padding:16px;margin:10px 0;border-radius:10px;display:flex;gap:16px;align-items:flex-start;transition:all 0.2s}
+.robot-card:hover{border-color:var(--gold);transform:translateY(-1px)}
+.robot-icon{width:56px;height:56px;background:linear-gradient(135deg,var(--cyan),var(--purple));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+.status-idle{color:var(--green);font-weight:700}.status-working{color:var(--gold);font-weight:700}
+.battery{height:6px;background:#222;border-radius:3px;overflow:hidden;margin-top:6px;width:100%}
+.battery-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));transition:width 0.5s}
+.badge{background:#222;color:#fff;padding:3px 8px;border-radius:10px;font-size:11px;margin-right:4px;display:inline-block}
+.badge.gold{background:var(--gold);color:#000;font-weight:700}.badge.verified{background:var(--cyan);color:#000;font-weight:700}.badge.battery-badge{background:var(--green);color:#000}
+.log{max-height:350px;overflow:auto;background:#000;border:1px solid var(--border);padding:12px;font-size:12px;border-radius:8px;line-height:1.8}
+.order{border-left:3px solid var(--cyan);padding:12px;background:#0f0f0f;margin:8px 0;border-radius:6px;font-size:13px}
+.order.sell{border-left-color:var(--red)}.order.buy{border-left-color:var(--green)}
 </style>
 </head>
 <body>
 
-<h1>🚀 BLACKRACK AI BLOCKCHAIN - P2P INFINITY YAFI BINANCE<br>💱 BRB <-> UGAS AI <-> NGN - PROFILE + RATING + ESCROW + INFINITY<br>💰 BRB + UGAS AI DUAL TOKEN - BLOCKCHAIN DAYA TOKEN BIYU - 10M BRB $100K - BULLISH 78%</h1>
+<div class="header">
+<h1>BLACKRACK AI BLOCKCHAIN</h1>
+<p>BRB + UGAS AI Dual Token - Blockchain One - Two Tokens Inside - AI ROBOT Fleet - P2P Infinity Marketplace</p>
+<p>Better than Binance P2P - BRB <-> UGAS AI <-> NGN - Infinity Trading - Autonomous AI Robots</p>
+<div class="owner-badge">OWNER: Golden diamond 9 - Founder & CEO - 100% Owner - AI ROBOT OWNER - 10M BRB + 100M UGAS AI</div>
+</div>
 
-<!-- P2P INFINITY MARKETPLACE - YAFI BINANCE P2P - INFINITY TRADING -->
-<div class="box box-p2p">
-<h2>💱 P2P INFINITY MARKETPLACE - YAFI BINANCE P2P - INFINITY TRADING - BRB <-> UGAS AI <-> NGN - PROFILE + RATING + ESCROW + INSTANT + NO LIMIT + AI - YAFI BINANCE</h2>
-<p><b>P2P INFINITY - YAFI BINANCE P2P - FEATURES:</b> ♾️ INFINITY = NO LIMIT TRADING + INSTANT RELEASE + AI VERIFICATION + DUAL TOKEN BRB+UGAS AI + NGN SUPPORT + ESCROW SECURE + RATING SYSTEM + PROFILE BADGES + YAFI BINANCE - BLOCKCHAIN DAYA TOKEN BIYU BRB DA UGAS AI - DUKA A CIKI - P2P INFINITY MARKETPLACE</p>
-<p><b>TRADING PAIRS - INFINITY:</b> BRB/UGAS AI | UGAS AI/BRB | BRB/NGN | NGN/BRB | UGAS AI/NGN | NGN/UGAS AI | BRB/USDT | UGAS AI/USDT - INFINITY PAIRS - DUAL TOKEN P2P</p>
-<p><b>1 BRB = 1000 UGAS AI = ₦15 = $0.01 - 1 UGAS AI = 0.001 BRB = ₦0.015 - FEE 0.5% INFINITY - YAFI BINANCE - ESCROW SECURE - AUTO RELEASE - AI VERIFICATION</b></p>
+<div class="card">
+<h2>🤖 AI ROBOT FLEET - Owner Golden diamond 9 - 9 Robots Active - Autonomous</h2>
+<p style="color:var(--muted);font-size:13px;margin-bottom:12px">Each robot has AI Brain GPT-4o + Quantum 1M Qubits - Battery Management - Hashrate 100-1000 H/s - Capabilities - Sensors Vision Lidar Thermal Audio - Autonomous Task Execution - Mining - P2P Trading - Chat Intelligence - Owner Golden diamond 9</p>
+<div style="margin-bottom:12px">
+<button onclick="loadRobots()">Refresh Robots - AI Fleet</button>
+<button class="secondary" onclick="loadDashboard()">Refresh Dashboard</button>
+<button class="secondary" onclick="loadBlocks()">Refresh Blocks</button>
+</div>
+<div id="robots">Loading AI Robots - Owner Golden diamond 9...</div>
+</div>
 
-<div style="display:flex;gap:10px;flex-wrap:wrap">
-<div style="flex:1;min-width:300px">
-<h3>➕ CREATE P2P ORDER - INFINITY - YAFI BINANCE</h3>
-<input id="p2p-username" placeholder="Username: Musa" value="Musa" style="width:140px">
+<div class="grid">
+<div class="card">
+<h2>🔧 Robot Task Execution - AI ROBOT - Owner Golden diamond 9</h2>
+<select id="robot-id" style="width:100%;margin-bottom:8px">
+<option>AI-ROBOT-001-NOMA</option>
+<option>AI-ROBOT-002-WELDER</option>
+<option>AI-ROBOT-003-MECHANIC</option>
+<option>AI-ROBOT-004-DOCTOR</option>
+<option>AI-ROBOT-005-TEACHER</option>
+<option>AI-ROBOT-006-SECURITY</option>
+<option>AI-ROBOT-007-ENERGY</option>
+<option>AI-ROBOT-008-P2P_TRADER</option>
+<option>AI-ROBOT-009-GENERAL</option>
+</select>
+<textarea id="robot-task" placeholder="Task description - e.g. Planting maize 1 hectare - Soil analysis - Autonomous" style="width:100%;height:70px">Planting maize 1 hectare - Soil analysis - Drone spray - Autonomous - Owner Golden diamond 9</textarea>
+<button onclick="executeRobotTask()" style="width:100%;margin-top:8px">Execute Task - AI ROBOT - Autonomous</button>
+<div id="robot-task-result" style="margin-top:12px;font-size:12px;background:#000;padding:12px;border-radius:8px;border:1px solid var(--border);min-height:80px">Task result will appear here - AI Robot - Owner Golden diamond 9 - BRB + UGAS AI Reward - Battery - Hashrate - Block Hash - TX</div>
+</div>
+
+<div class="card">
+<h2>💬 Robot Chat - AI Intelligence - Owner Golden diamond 9</h2>
+<select id="chat-robot-id" style="width:100%;margin-bottom:8px">
+<option>AI-ROBOT-001-NOMA</option>
+<option>AI-ROBOT-004-DOCTOR</option>
+<option>AI-ROBOT-005-TEACHER</option>
+<option>AI-ROBOT-008-P2P_TRADER</option>
+<option>AI-ROBOT-009-GENERAL</option>
+</select>
+<input id="chat-message" value="hello" placeholder="Message to robot - hello, status, work" style="width:70%">
+<button onclick="chatRobot()">Chat with Robot - AI</button>
+<div id="chat-result" style="margin-top:12px;font-size:12px;background:#000;padding:12px;border-radius:8px;border:1px solid var(--border);min-height:80px">Chat: AI Robot will reply here - Owner Golden diamond 9 - Try hello, status, work - GPT-4o + Quantum Brain</div>
+<p style="margin-top:10px;font-size:11px;color:var(--muted)">Try: hello, status, work, or any task - AI Robot - GPT-4o + Quantum Brain - Owner Golden diamond 9</p>
+</div>
+</div>
+
+<div class="card">
+<h2>💱 P2P Infinity Marketplace - Better than Binance P2P - Owner Golden diamond 9</h2>
+<p style="color:var(--muted);font-size:13px;margin-bottom:12px">Trading Pairs: BRB/UGAS AI | UGAS AI/BRB | BRB/NGN | NGN/BRB | UGAS AI/NGN | BRB/USDT - Features: No Limit - Instant Release - Escrow Secure - Profile + Rating + Badges - Dual Token - Better than Binance P2P - Owner Golden diamond 9</p>
+<div class="grid">
+<div>
+<h3>Create Order - P2P Infinity</h3>
+<input id="p2p-user" value="Golden diamond 9" placeholder="Username - Owner Golden diamond 9">
 <select id="p2p-type"><option>SELL</option><option>BUY</option></select>
-<select id="p2p-from"><option>BRB</option><option>UGAS AI</option><option>NGN</option><option>USDT</option></select>
-→
-<select id="p2p-to"><option>UGAS AI</option><option>BRB</option><option>NGN</option><option>USDT</option></select>
-<br>
-<input id="p2p-amount" type="number" placeholder="Amount: 100" value="100" style="width:90px">
-<input id="p2p-price" type="number" placeholder="Price: 1000" value="1000" style="width:90px">
-<input id="p2p-payment" placeholder="Payment: BANK TRANSFER" value="BANK TRANSFER" style="width:140px">
-<br>
-<input id="p2p-min" type="number" placeholder="Min: 10" value="10" style="width:70px">
-<input id="p2p-max" type="number" placeholder="Max: 1000" value="1000" style="width:90px">
-<button class="cyan" onclick="createP2POrder()" style="font-size:14px">Create P2P Order INFINITY - /api/p2p/create-order - YAFI BINANCE</button>
-<p><b>Quick Create - INFINITY:</b>
-<button class="cyan" onclick="quickP2P('SELL','BRB','UGAS AI',100,1000,'BANK TRANSFER')">SELL 100 BRB → 100K UGAS AI - INFINITY</button>
-<button class="cyan" onclick="quickP2P('SELL','BRB','NGN',500,15,'OPAY')">SELL 500 BRB → ₦7500 - OPAY - INFINITY</button>
-<button class="cyan" onclick="quickP2P('BUY','NGN','BRB',10000,0.066,'BANK TRANSFER')">BUY BRB WITH ₦10K - BANK - INFINITY</button>
-<button class="cyan" onclick="quickP2P('SELL','UGAS AI','BRB',50000,0.001,'BRB WALLET')">SELL 50K UGAS AI → 50 BRB - INFINITY</button>
-</p>
+<select id="p2p-from"><option>BRB</option><option>UGAS AI</option><option>NGN</option></select> to
+<select id="p2p-to"><option>UGAS AI</option><option>BRB</option><option>NGN</option></select><br>
+<input id="p2p-amount" type="number" value="100" placeholder="Amount">
+<input id="p2p-price" type="number" value="1000" placeholder="Price per unit">
+<input id="p2p-payment" value="Bank Transfer" placeholder="Payment Method"><br>
+<button onclick="createOrder()" class="cyan" style="width:100%;margin-top:8px">Create Order - P2P Infinity - Better than Binance</button>
 </div>
-<div style="flex:1;min-width:300px">
-<h3>👤 PROFILE - P2P INFINITY - YAFI BINANCE</h3>
-<input id="profile-username" placeholder="Username: Musa" value="Musa" style="width:140px">
-<input id="profile-phone" placeholder="Phone: 08012345678" value="08012345678" style="width:140px">
-<label><input type="checkbox" id="profile-verified"> Verified</label>
-<button class="green" onclick="createProfile()">Create Profile - /api/p2p/create-profile</button>
-<button onclick="loadProfile()">Load Profile - /api/p2p/profile?username=</button>
-<div id="profile-display" class="profile-card">👤 Profile: No profile yet - Create profile - P2P INFINITY - YAFI BINANCE</div>
-<div id="p2p-stats" style="border:1px solid #0ff;padding:10px;background:#000;margin-top:10px">📊 P2P Stats: Loading... - INFINITY</div>
+<div>
+<h3>Execute Trade - Escrow Secure</h3>
+<input id="trade-id" placeholder="Order ID e.g. P2P-000001" style="width:100%;margin-bottom:6px">
+<input id="trade-buyer" value="Trader" placeholder="Buyer Username" style="width:60%">
+<input id="trade-amount" type="number" value="10" placeholder="Amount" style="width:30%"><br>
+<button onclick="doTrade()" class="purple" style="width:100%;margin-top:8px">Execute Trade - Escrow - Instant - Owner Golden diamond 9</button>
+<div id="p2p-stats" style="margin-top:12px;font-size:12px;color:var(--muted);background:#000;padding:8px;border-radius:6px;border:1px solid var(--border)">Stats loading - Owner Golden diamond 9...</div>
+</div>
+</div>
+<div style="margin-top:16px">
+<button onclick="loadOrders()">Refresh Orders - P2P Infinity</button>
+<button class="secondary" onclick="loadOrdersFiltered('BRB')">Filter BRB</button>
+<button class="secondary" onclick="loadOrdersFiltered('UGAS AI')">Filter UGAS AI</button>
+<button class="secondary" onclick="loadTrades()">Load Trades</button>
+</div>
+<div id="p2p-orders" style="margin-top:12px">Loading P2P orders - Owner Golden diamond 9 - Better than Binance P2P...</div>
+<div id="p2p-trades" style="margin-top:12px;font-size:11px;background:#000;padding:10px;border-radius:6px;border:1px solid var(--border)">Trades will appear here - Owner Golden diamond 9</div>
+</div>
+
+<div class="grid">
+<div class="card">
+<h2>📊 Dashboard - Owner Golden diamond 9 - BRB + UGAS AI + AI ROBOT + P2P</h2>
+<div id="dashboard" style="font-size:11px;background:#000;padding:10px;border-radius:6px;border:1px solid var(--border);max-height:400px;overflow:auto">Loading Dashboard - Owner Golden diamond 9...</div>
+<button onclick="loadDashboard()" style="margin-top:10px">Refresh Dashboard - Owner Golden diamond 9</button>
+</div>
+<div class="card">
+<h2>⛏️ Mining + Mint - Owner Golden diamond 9 - BRB + UGAS AI</h2>
+<h3>Mine Block - Blockchain</h3>
+<input id="mine-validator" value="Validator-001" placeholder="Validator - Owner Golden diamond 9" style="width:60%">
+<input id="mine-task" value="Validation - Owner Golden diamond 9" placeholder="Task" style="width:100%;margin-top:6px">
+<button onclick="mine()" style="width:100%;margin-top:8px">Mine Block - 100 BRB + 1000 UGAS AI Reward</button>
+<h3 style="margin-top:16px">Mint - Dual Token</h3>
+<input id="mint-user" value="Golden diamond 9" placeholder="Username - Owner Golden diamond 9" style="width:60%">
+<input id="mint-brb" type="number" value="100" placeholder="BRB" style="width:18%">
+<input id="mint-ugas" type="number" value="1000" placeholder="UGAS AI" style="width:18%">
+<button onclick="mint()" style="width:100%;margin-top:8px">Mint BRB + UGAS AI - Owner Golden diamond 9</button>
+<div id="blocks" style="margin-top:12px;font-size:11px;background:#000;padding:10px;border-radius:6px;border:1px solid var(--border);max-height:200px;overflow:auto">Blocks will appear here - Owner Golden diamond 9 - Mining - BRB + UGAS AI</div>
 </div>
 </div>
 
-<h3>📋 ACTIVE P2P ORDERS - INFINITY - YAFI BINANCE P2P - LIVE - DUAL TOKEN BRB+UGAS AI</h3>
-<div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px">
-<button onclick="loadP2POrders()">Refresh All Orders - INFINITY - /api/p2p/orders</button>
-<button onclick="loadP2POrders('BRB')">Filter BRB - BRB/UGAS AI - BRB/NGN</button>
-<button onclick="loadP2POrders('UGAS AI')">Filter UGAS AI - UGAS AI/BRB - UGAS AI/NGN</button>
-<button onclick="loadP2POrders(null,'SELL')">Filter SELL Only</button>
-<button onclick="loadP2POrders(null,'BUY')">Filter BUY Only</button>
-<button onclick="loadP2PTrades()">Load Trades & Escrow - /api/p2p/trades - INFINITY</button>
+<div class="card">
+<h2>🗺️ Roadmap Q1-Q8 - Owner Golden diamond 9 - BRB + UGAS AI + AI ROBOT + P2P Infinity</h2>
+<div style="font-size:13px;line-height:1.8;color:var(--muted)">
+<p><b style="color:var(--gold)">Q1 Launch:</b> 300K BRB - Genesis - 12 Houses - 60 Robots - 9 AI Robots Active - Owner Golden diamond 9 - Foundation</p>
+<p><b style="color:var(--gold)">Q2 Wallet & Staking + P2P Infinity + AI ROBOT:</b> 1M BRB TVL $100K - P2P Marketplace Better than Binance P2P - BRB<->UGAS AI<->NGN - AI Robot Fleet 9 Robots - Chat + Task Automation - Owner Golden diamond 9</p>
+<p><b style="color:var(--gold)">Q3 DeFi + AI ROBOT Scale:</b> 3M BRB - DEX + Lending - Trading Bot - AI Robot Scale 50 Robots - Autonomous Farming Welding Mechanic Doctor Teacher Security Energy</p>
+<p><b style="color:var(--gold)">Q4 NFT + P2P NFT + AI ROBOT NFT:</b> 5M BRB - NFT Marketplace - Robot NFT - Task NFT - AI Robot Collectibles - Owner Golden diamond 9</p>
+<p><b style="color:var(--gold)">Q5 Metaverse + AI ROBOT VR:</b> 7M BRB - VR + Land - AI Robot Avatar - VR Training - Metaverse Robot Fleet - Owner Golden diamond 9</p>
+<p><b style="color:var(--gold)">Q6 Energy Grid + AI ROBOT Energy:</b> 8.5M BRB - Solar 10MW - 1M kWh/day - $100K/month - AI Robot Energy Management - Battery Management - Grid Optimization - Owner Golden diamond 9</p>
+<p><b style="color:var(--gold)">Q7 DAO Scale + AI ROBOT DAO:</b> 9.5M BRB - 1M Users - DAO Governance - AI Robot Voting - Robot DAO - Owner Golden diamond 9</p>
+<p><b style="color:var(--gold)">Q8 Robotics Automation Final Ultimate + AI ROBOT Singularity:</b> 10M BRB $100K/month - 100M UGAS AI - P2P Infinity Final - 1000 Houses - 10K Robots - AI Robot Singularity - AGI Superintelligence - Owner Golden diamond 9 - Final Ultimate</p>
 </div>
-<div id="p2p-orders">💱 P2P Orders: Loading... - Run python app.py - http://localhost:8000 - P2P INFINITY YAFI BINANCE - BRB<->UGAS AI<->NGN - INFINITY TRADING</div>
-<div id="p2p-trades" style="max-height:300px;overflow:auto;border:1px solid #ff0;padding:10px;background:#111;margin-top:10px">💱 P2P Trades & Escrow: No trades yet - INFINITY - YAFI BINANCE - ESCROW SECURE - AUTO RELEASE</div>
-
-<p><b>Execute Trade - INFINITY - Escrow Secure:</b>
-<input id="trade-orderid" placeholder="Order ID: P2P-000001-MUSA" style="width:180px">
-<input id="trade-buyer" placeholder="Buyer: Ali - Buyer" value="Ali - Buyer" style="width:130px">
-<input id="trade-amount" type="number" placeholder="Amount: 50" value="50" style="width:80px">
-<button class="cyan" onclick="executeTrade()">Execute Trade INFINITY - /api/p2p/trade - Escrow + Auto Release - YAFI BINANCE</button>
-</p>
 </div>
 
-<!-- AI BLOCKCHAIN VISUAL -->
-<div class="box box-ai">
-<h2>🌌 AI BLOCKCHAIN VISUAL - LIVE BLOCKCHAIN ANIMATION - ME DAUKAR HANKALI</h2>
-<canvas id="blockchain-canvas"></canvas>
-<div id="ai-visual-status">🌌 AI BLOCKCHAIN VISUAL - LIVE - Blocks flying - Hashes - AI Thinking - Quantum Brain 1M Qubits - P2P INFINITY YAFI BINANCE - ME DAUKAR HANKALI</div>
-<button class="pink" onclick="startAIBlockchainVisual()">Start AI Blockchain Visual</button>
-<button class="pink" onclick="stopAIBlockchainVisual()">Stop Visual</button>
+<div class="card">
+<h2>📝 System Log - Owner Golden diamond 9 - AI ROBOT - BRB + UGAS AI - P2P Infinity</h2>
+<div id="log" class="log">Ready - BLACKRACK AI BLOCKCHAIN - Owner Golden diamond 9 - AI ROBOT FLEET INCLUDED - Clean Version - BRB + UGAS AI Dual Token - P2P Infinity Better than Binance P2P - Blockchain One - Two Tokens Inside - 9 AI Robots Active - No Musa - No Hausa - English Only - Professional - Final Complete</div>
 </div>
-
-<!-- AI CHATBOT -->
-<div class="box box-ai">
-<h2>🤖 BLACKRACK AI CHATBOT - CHATGPT AI - P2P INFINITY YAFI BINANCE</h2>
-<div id="ai-chat-box">
-<div class="ai-message">🤖 <b>BLACKRACK AI - P2P INFINITY YAFI BINANCE:</b><br>Sannu! Barka da zuwa BLACKRACK AI BLOCKCHAIN - P2P INFINITY MARKETPLACE YAFI BINANCE P2P! 🚀 Ina nan BLACKRACK AI - GPT-4o + Quantum Brain - Me daukar hankali - P2P INFINITY - BRB <-> UGAS AI <-> NGN - PROFILE + RATING + ESCROW + INFINITY - YAFI BINANCE P2P - INFINITY TRADING - DUAL TOKEN BRB+UGAS AI - BLOCKCHAIN DAYA TOKEN BIYU - 10M BRB $100K + 100M UGAS AI + P2P $5000 = $106K/month - Bullish 78% - Me kake so ka sani game da P2P INFINITY?</div>
-</div>
-<input id="ai-user" placeholder="User: Musa" value="Musa" style="width:120px">
-<textarea id="ai-message" placeholder="Tambayi game da P2P INFINITY YAFI BINANCE - BRB<->UGAS AI" style="width:60%;height:60px">Sannu BLACKRACK AI - P2P INFINITY YAFI BINANCE - BRB <-> UGAS AI <-> NGN - Yaya yake aiki? - Profile + Rating + Escrow + Infinity - Yaya zan yi saye da siyarwa?</textarea>
-<button class="pink" onclick="sendAIMessage()" style="font-size:16px">Send to BLACKRACK AI - CHATGPT AI - P2P INFINITY</button>
-<button onclick="clearAIChat()">Clear AI Chat</button>
-<button onclick="loadAIChats()">Load AI Chats History</button>
-<div id="ai-chat-status">🤖 BLACKRACK AI - Ready - P2P INFINITY YAFI BINANCE - ME DAUKAR HANKALI</div>
-<p><b>Quick AI - P2P INFINITY:</b>
-<button class="pink" onclick="quickAI('P2P INFINITY YAFI BINANCE - BRB <-> UGAS AI <-> NGN - Yaya yake aiki? - Profile + Rating + Escrow + Infinity')">P2P INFINITY Yaya yake aiki? - YAFI BINANCE</button>
-<button class="pink" onclick="quickAI('Yadda zan yi saye da siyarwa da chanji zakanin BRB da UGAS AI - P2P INFINITY - BRB<->UGAS AI')">Saye da Siyarwa BRB<->UGAS AI - CHANJI</button>
-<button class="pink" onclick="quickAI('Mene ne PROFILE - Rating + Trades + Badges - P2P INFINITY YAFI BINANCE')">PROFILE - Rating + Badges - INFINITY</button>
-</p>
-</div>
-
-<div class="box">
-<h2>📊 DASHBOARD ALL - BRB+UGAS AI+P2P INFINITY+AI - /api/dashboard - ME DAUKAR HANKALI</h2>
-<div id="dashboard">Loading dashboard... - Run python app.py - http://localhost:8000 - ALL IN ONE - P2P INFINITY YAFI BINANCE</div>
-<button onclick="loadDashboard()">Refresh Dashboard ALL - BRB+UGAS AI+P2P INFINITY+AI</button>
-<button onclick="loadBlocks()">Load Blocks</button>
-<button onclick="loadLogs()">Load Logs</button>
-</div>
-
-<div class="box">
-<h2>📊 DATA ECONOMY - 1 MB=1 BRB+10 UGAS AI=$0.0101 - DATA=MONEY</h2>
-<div id="data-counter">📊 Data: 0 MB<br>💰 Earned: 0 BRB + 0 UGAS AI<br>⛏️ Data Mining - BRB+UGAS AI+P2P INFINITY</div>
-<input id="data-user" placeholder="User: Musa" value="Musa"><input id="data-page" placeholder="Page" value="House1 Teacher - Video Lesson"><input id="data-mb" type="number" value="150"><button onclick="trackDataManual()">Track Data - /api/data</button>
-</div>
-
-<div class="box box-yellow">
-<h2>🤖 ROBOT SUBSCRIPTION - BRB+UGAS AI - SUBSCRIBE</h2>
-<input id="sub-user" placeholder="User: Musa - Farmer" value="Musa - Farmer">
-<select id="sub-plan">
-<option>NOMA FARMER - 500 BRB + 5000 UGAS AI/month - 30 tasks</option>
-<option>WELDER - 800 BRB + 8000 UGAS AI/month - 20 tasks</option>
-<option>MECHANIC - 700 BRB + 7000 UGAS AI/month - 25 tasks</option>
-<option>DOCTOR - 1000 BRB + 10000 UGAS AI/month - 50 tasks - Doctor Teaches All</option>
-<option>TEACHER - 600 BRB + 6000 UGAS AI/month - 60 tasks - Teacher Teaches All</option>
-<option>SECURITY - 300 BRB + 3000 UGAS AI/month - 100 tasks - SERVER SECURE 99.99%</option>
-<option>ENERGY - 2000 BRB + 1000 UGAS AI/month - PRODUCES ENERGY! - BEST MINER</option>
-<option>ALL IN ONE - 5000 BRB + 20000 UGAS AI/month - 500 tasks - FINAL ULTIMATE</option>
-</select>
-<input id="sub-months" type="number" value="1"><button onclick="subscribe()">Subscribe - /api/subscribe</button>
-<p><b>Quick Subscribe:</b>
-<button onclick="quickSub('NOMA FARMER')">NOMA 500 BRB+5000 UGAS AI</button>
-<button onclick="quickSub('DOCTOR')">DOCTOR 1000 BRB+10000 UGAS AI</button>
-<button onclick="quickSub('ENERGY')">ENERGY 2000 BRB+1000 UGAS AI - BEST!</button>
-<button class="gold" onclick="quickSub('ALL IN ONE')" style="font-size:16px">ALL IN ONE 5000 BRB+20000 UGAS AI - VIP - FINAL ULTIMATE</button>
-</p>
-<div id="sub-status">📊 Subs: 0 - BRB: 0 - UGAS AI: 0</div>
-<p><b>Do Task:</b> <input id="task-subid" placeholder="Sub ID"> <input id="task-detail" placeholder="Task" value="NOMA - Shuka Masara 1 Hectare"> <button onclick="doTask()">Do Task - /api/task</button></p>
-</div>
-
-<div class="box box-yellow">
-<h2>⛏️ ROBOT MINING - BRB+UGAS AI - TASK=MINING</h2>
-<input id="mine-robot" placeholder="Robot ID" value="BLACKRACK-ROBOT-001-FARMER">
-<select id="mine-type">
-<option>NOMA FARMER - 100 H/s</option><option>WELDER - 150 H/s</option><option>MECHANIC - 120 H/s</option><option>DOCTOR - 200 H/s</option><option>TEACHER - 250 H/s</option><option>SECURITY - 200 H/s</option><option>ENERGY - 500 H/s - PRODUCES ENERGY! - BEST!</option><option>ALL IN ONE - 1000 H/s - AGI - SUPER MINER</option>
-</select>
-<input id="mine-task" placeholder="Task" value="NOMA - Shuka Masara 1 Hectare - BRB+UGAS AI Mining">
-<button onclick="mine()">Mine Block - /api/mine</button>
-<p><b>Quick Mine:</b>
-<button onclick="quickMine('NOMA FARMER')">Mine NOMA 100 H/s</button>
-<button onclick="quickMine('ENERGY')">Mine ENERGY 500 H/s - BEST!</button>
-<button class="gold" onclick="quickMine('ALL IN ONE')" style="font-size:16px">Mine ALL IN ONE 1000 H/s - SUPER MINER - FINAL</button>
-</p>
-<div id="mining-status">⛏️ Mined: 0 BRB + 0 UGAS AI - Blocks: 0 - Hashrate: 0 H/s</div>
-<div id="blockchain" class="box" style="max-height:200px;overflow:auto">📦 Blockchain: No blocks yet - Start mining!</div>
-</div>
-
-<div class="box box-red">
-<h2>🛡️ SERVER SECURITY - BRB+UGAS AI - SERVER SECURE 99.99%</h2>
-<input id="sec-type" placeholder="Threat Type" value="BARAWO THIEF"><input id="sec-detail" placeholder="Detail" value="Thief at House1 Teacher 2AM"><button class="red" onclick="securityCheck()">Block Threat - /api/security</button>
-<p><b>Quick Security Block:</b>
-<button class="red" onclick="quickSec('BARAWO THIEF','Thief at House1')">Block Thief</button>
-<button class="red" onclick="quickSec('GOBARA FIRE','Fire at House3')">Block Fire</button>
-<button class="red" onclick="quickSec('CYBER HACK','Hack IP 192.168.1.100')">Block Hack</button>
-<button class="red" onclick="quickSec('SERVER DDOS','DDoS 10,000 req/sec')">Block DDoS</button>
-</p>
-<div id="security-status">🛡️ Server Secure 99.99% - Threats Blocked: 0</div>
-<div id="security-logs" style="max-height:250px;overflow:auto;border:1px solid #f00;padding:10px;background:#000">🛡️ Security Logs: No threats yet</div>
-</div>
-
-<div class="box">
-<h2>💰⛽ DUAL TOKEN MINT - BRB + UGAS AI - MINT DUAL</h2>
-<input id="mint-user" placeholder="User: Musa" value="Musa - Dual Holder"><input id="mint-brb" type="number" value="1000"><input id="mint-ugas" type="number" value="10000"><input id="mint-type" placeholder="Type" value="BLACKRACK AI - BRB+UGAS AI Dual NFT"><button class="green" onclick="mintDual()">Mint Dual - /api/mint - BRB+UGAS AI</button>
-<h2>💹 STAKE DUAL - BRB 78% + UGAS AI 22% - DUAL STAKING</h2>
-<input id="stake-user" placeholder="User: Musa" value="Musa - Staker"><input id="stake-brb" type="number" value="1000"><input id="stake-ugas" type="number" value="10000"><button class="green" onclick="stakeDual()">Stake Dual - /api/stake - BRB 78% + UGAS AI 22%</button>
-</div>
-
-<div class="box box-gold">
-<h2>🗺️ ROADMAP Q1-Q8 - BLACKRACK AI BLOCKCHAIN - P2P INFINITY YAFI BINANCE - 10M BRB + 100M UGAS AI + P2P $5000 = $106K/month - BULLISH 78%</h2>
-<p><b>Q1 LAUNCH:</b> 300K BRB + 3M UGAS AI - 12 Houses - 60 Robots - 2000 People - $175 - Town to Token - Foundation - AI Chatbot V1 - P2P INFINITY V1</p>
-<p><b>Q2 WALLET & STAKING + P2P INFINITY:</b> Wallet + Staking BRB 78% + UGAS AI 22% - 1M BRB TVL $100K + 10M UGAS AI - 1000 Users - Energy Bridge + Data Mining + AI Chatbot V2 + P2P INFINITY MARKETPLACE YAFI BINANCE P2P - BRB<->UGAS AI<->NGN - PROFILE + RATING + ESCROW + INFINITY - $5000/month P2P Fee</p>
-<p><b>Q3 DEFI + P2P SCALE:</b> DEX + Lending + DeFi Trading Bot + P2P INFINITY SCALE 10K Users - Energy 207K kWh/day $2070/day + Data 200 GB/day $2000/day + AI $1000/day + P2P $5000/day = $10K/day - 3M BRB TVL $1M + 30M UGAS AI</p>
-<p><b>Q4 NFT + P2P NFT:</b> NFT Minting + Creator Hub + Marketplace + P2P INFINITY NFT TRADING - Future Robot V2 + Metaverse Start + AI Chatbot V3 ChatGPT Integration - 5M BRB NFT Volume $100K + 50M UGAS AI + P2P $20K/month</p>
-<p><b>Q5 METAVERSE VR + P2P VR:</b> Metaverse Land + VR Hub + Avatar + P2P INFINITY VR TRADING - Future Robot V3 + VR 500 MB=500 BRB+5000 UGAS AI - 7M BRB Metaverse $100K + 70M UGAS AI + AI Chat VR $30K + P2P VR $30K</p>
-<p><b>Q6 ENERGY GRID + P2P ENERGY:</b> Solar 10MW 1M kWh/day + Power Infrastructure + Green Mining Nodes + P2P INFINITY ENERGY TRADING - Energy $50K + Data $30K + DeFi $20K + AI Chat $10K + P2P $20K = $130K/month - 8.5M BRB Green + 85M UGAS AI</p>
-<p><b>Q7 ECOSYSTEM SCALE & DAO + P2P DAO:</b> DAO Governance Live + Ecosystem Grants + Global Partnerships BRB↔ETH BTC SOL + P2P INFINITY DAO GOVERNANCE - Future Robot V5 + Scale 100 Houses 1M Users + AI Chat Global $20K/month + P2P $30K/month - 9.5M BRB $150K/month + 95M UGAS AI</p>
-<p><b>Q8 ROBOTICS & AUTOMATION + P2P INFINITY FINAL ULTIMATE:</b> Robot Validators 60 Robots + AI Automation 100% + Security Bots + Grants + Global + 1000 Houses 1B BRB $10M Global + 10K Developers + 1M Users + Energy $50K + Data $30K + DeFi $20K + NFT $20K + Metaverse $30K + AI Chat $20K + P2P INFINITY $50K = $220K/month - 10M BRB $100K/month + 100M UGAS AI $1000/month + AI $1000/month + P2P $5000/month = $106K/month Conservative - ROI 0.2 months Bullish 78% Dominant Black Rack Blockchain Only New Decentralized Future AI Everything Is To Be AI - P2P INFINITY MARKETPLACE YAFI BINANCE P2P - INFINITY TRADING - BRB<->UGAS AI<->NGN - PROFILE + RATING + ESCROW + INSTANT + NO LIMIT + AI - FINAL ULTIMATE - THE END + THE BEGINNING!</p>
-</div>
-
-<div id="log" class="box">📝 LOG ALL: Ready - BLACKRACK AI BLOCKCHAIN - PYTHON ALL + HTML ALL - HADE DUKA - P2P INFINITY YAFI BINANCE + BRB+UGAS AI DUAL + CHATGPT AI + MINING + SECURITY - WAJE DAYA - 2 FILES ONLY - app.py ALL + index.html ALL - WAJE DAYA - FINAL ULTIMATE - Run python app.py - http://localhost:8000 - P2P INFINITY TRADING YAFI BINANCE - BRB<->UGAS AI<->NGN - PROFILE + RATING + ESCROW + INFINITY - ME DAUKAR HANKALI - KOMAI AI NE!</div>
 
 <script>
+// ==================== API HELPERS - OWNER GOLDEN DIAMOND 9 ====================
 const API="";
-async function apiGet(p){try{let r=await fetch(API+p);return await r.json();}catch(e){return {error:e.toString()};}}
-async function apiPost(p,b){try{let r=await fetch(API+p,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});return await r.json();}catch(e){return {error:e.toString()};}}
+async function apiGet(p){try{let r=await fetch(API+p);return await r.json();}catch(e){return {error:e.toString()}}}
+async function apiPost(p,b){try{let r=await fetch(API+p,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});return await r.json();}catch(e){return {error:e.toString()}}}
 
-// P2P INFINITY - YAFI BINANCE P2P
-async function createP2POrder(){
-  let username=document.getElementById('p2p-username').value||"Musa";
-  let order_type=document.getElementById('p2p-type').value||"SELL";
-  let from_token=document.getElementById('p2p-from').value||"BRB";
-  let to_token=document.getElementById('p2p-to').value||"UGAS AI";
-  let amount=parseFloat(document.getElementById('p2p-amount').value||100);
-  let price=parseFloat(document.getElementById('p2p-price').value||1000);
-  let payment_method=document.getElementById('p2p-payment').value||"BANK TRANSFER";
-  let min_limit=parseFloat(document.getElementById('p2p-min').value||10);
-  let max_limit=parseFloat(document.getElementById('p2p-max').value||1000);
-  let r=await apiPost("/api/p2p/create-order",{username,order_type,from_token,to_token,amount,price,payment_method,min_limit,max_limit});
-  console.log("P2P ORDER:",r);
-  document.getElementById('log').innerHTML+=`<br>💱 P2P INFINITY ORDER: ${r.order_id} - ${r.username} - ${r.type} ${r.amount} ${r.from_token} -> ${r.to_token} @ ${r.price} - Total ${r.total} ${r.to_token} - ${r.payment_method} - INFINITY - YAFI BINANCE`;
-  document.getElementById('trade-orderid').value=r.order_id||"";
-  loadP2POrders(); loadDashboard();
-}
-function quickP2P(type,from,to,amount,price,payment){
-  document.getElementById('p2p-type').value=type; document.getElementById('p2p-from').value=from; document.getElementById('p2p-to').value=to;
-  document.getElementById('p2p-amount').value=amount; document.getElementById('p2p-price').value=price; document.getElementById('p2p-payment').value=payment;
-  createP2POrder();
-}
-async function loadP2POrders(filterToken=null, filterType=null){
-  let url="/api/p2p/orders";
-  let params=[];
-  if(filterToken) params.push(`token=${encodeURIComponent(filterToken)}`);
-  if(filterType) params.push(`type=${filterType}`);
-  if(params.length) url+=`?${params.join('&')}`;
-  let d=await apiGet(url);
-  let html=`💱 P2P INFINITY ORDERS - ACTIVE ${d.stats?.active_orders||0} / TOTAL ${d.stats?.total_orders||0} - YAFI BINANCE P2P - INFINITY TRADING - BRB<->UGAS AI<->NGN - LIVE - DUAL TOKEN - FILTER: ${filterToken||'ALL'} ${filterType||''}<br><br>`;
-  (d.orders||[]).reverse().forEach(o=>{
-    html+=`<div class="p2p-order ${o.type=='BUY'?'p2p-buy':'p2p-sell'}">
-    <b>${o.order_id}</b> - <span style="color:${o.type=='BUY'?'#0f0':'#f00'}">${o.type}</span> ${o.amount} ${o.from_token} → ${o.to_token} @ ${o.price} ${o.to_token}/${o.from_token} - Total ${o.total.toFixed(2)} ${o.to_token}<br>
-    👤 ${o.username} ${o.verified?'✅ VERIFIED':''} - Rating ${o.rating}⭐ - Trades ${o.trades} - ${o.payment_method} - Min ${o.min_limit} Max ${o.max_limit} - ♾️ INFINITY - 🛡️ Escrow - ⚡ Instant - 🤖 AI Verified - YAFI BINANCE<br>
-    <small>Created ${o.created} - ${o.status} - Profile: ${o.profile?.badges?.join(',')} - ${o.profile?.bio?.substring(0,60)}...</small><br>
-    <button class="cyan" onclick="document.getElementById('trade-orderid').value='${o.order_id}';document.getElementById('trade-amount').value='${o.min_limit}';window.scrollTo(0,0);">Trade This Order INFINITY - Escrow Secure - YAFI BINANCE</button>
+// ==================== AI ROBOT FUNCTIONS - OWNER GOLDEN DIAMOND 9 ====================
+async function loadRobots(){
+  let d=await apiGet("/api/robots");
+  let html="";
+  (d.robots||[]).forEach(r=>{
+    html+=`<div class="robot-card">
+    <div class="robot-icon">🤖</div>
+    <div style="flex:1">
+    <b>${r.id}</b> - ${r.type} - <span class="${r.status=='IDLE'?'status-idle':'status-working'}">${r.status}</span> - <span class="badge gold">Owner ${d.owner}</span><br>
+    <span style="font-size:11px;color:#888">Battery ${r.battery}% - Tasks ${r.tasks} - BRB ${r.brb} - UGAS AI ${r.ugas} - Hashrate ${r.hashrate} H/s - Brain ${r.brain}</span>
+    <div class="battery"><div class="battery-fill" style="width:${r.battery}%"></div></div>
+    <span style="font-size:10px;color:#666">Capabilities: ${r.capabilities?.join(', ')} | Sensors: ${r.sensors?.join(', ')}</span><br>
+    <button onclick="document.getElementById('robot-id').value='${r.id}';document.getElementById('chat-robot-id').value='${r.id}'">Select This Robot - Owner Golden diamond 9</button>
+    <button class="secondary" onclick="quickTask('${r.id}','${r.type}')">Quick Task - ${r.type}</button>
+    </div>
     </div>`;
   });
-  html+=`<br>📊 P2P STATS: Total Orders ${d.stats?.total_orders} - Active ${d.stats?.active_orders} - Trades ${d.stats?.total_trades} - Volume ${d.stats?.total_volume?.toFixed(2)} - Users ${d.stats?.total_users} - Features: ${d.stats?.infinity_features?.join(', ')} - YAFI BINANCE - INFINITY`;
-  document.getElementById('p2p-orders').innerHTML=html;
-  document.getElementById('p2p-stats').innerHTML=`📊 P2P INFINITY STATS: Orders ${d.stats?.total_orders} - Active ${d.stats?.active_orders} - Trades ${d.stats?.total_trades} - Volume ${d.stats?.total_volume?.toFixed(2)} - Users ${d.stats?.total_users} - INFINITY - YAFI BINANCE<br>Features: ${d.stats?.infinity_features?.join(', ')}`;
+  document.getElementById('robots').innerHTML=html||"No robots - Owner Golden diamond 9";
 }
-async function executeTrade(){
-  let order_id=document.getElementById('trade-orderid').value;
-  let buyer=document.getElementById('trade-buyer').value||"Ali - Buyer";
-  let amount=parseFloat(document.getElementById('trade-amount').value||50);
-  if(!order_id){alert("Enter Order ID - Load P2P Orders first");return;}
-  let r=await apiPost("/api/p2p/trade",{order_id,buyer,amount});
-  console.log("TRADE:",r);
-  if(r.error){alert(r.error);return;}
-  document.getElementById('log').innerHTML+=`<br>💱 P2P INFINITY TRADE: ${r.trade_id} - ${r.seller} -> ${r.buyer} - ${r.amount} ${r.from_token} -> ${r.to_token} - Total ${r.total} ${r.to_token} - Escrow ${r.escrow_id} - ${r.status} - ${r.infinity_feature} - INFINITY - YAFI BINANCE`;
-  document.getElementById('p2p-trades').innerHTML+=`<br>💱 TRADE: ${r.trade_id} - ${r.seller} -> ${r.buyer} - ${r.amount} ${r.from_token} -> ${r.to_token} = ${r.total} ${r.to_token} - Escrow ${r.escrow_id} - ${r.status} - ${r.infinity_feature} - INFINITY - YAFI BINANCE - ${r.created}`;
-  loadP2POrders(); loadDashboard();
+function quickTask(robotId, type){
+  document.getElementById('robot-id').value=robotId;
+  const tasks={
+    "NOMA":"Planting maize 1 hectare - Soil analysis pH 6.5 - Drone spray - Autonomous - Owner Golden diamond 9",
+    "WELDER":"Welding iron door - 3D metal print - Quality check - Laser cutting - Owner Golden diamond 9",
+    "MECHANIC":"Diagnosis Toyota Corolla - Engine overheat - Repair - Test drive - Owner Golden diamond 9",
+    "DOCTOR":"Headache diagnosis - Scan - Prescription Paracetamol - Telemedicine - Owner Golden diamond 9",
+    "TEACHER":"Math x+2=5 -> x=3 - English My name is Golden diamond 9 - VR Class - Owner Golden diamond 9",
+    "SECURITY":"Patrol House 1 - Face recognition - Thief detection - Fire detection - Owner Golden diamond 9",
+    "ENERGY":"Solar 10MW control - Battery 100% - Energy trading - Power distribution - Owner Golden diamond 9",
+    "P2P_TRADER":"Order matching BRB/UGAS AI - Price prediction - Auto trading - Escrow - Owner Golden diamond 9",
+    "GENERAL":"General task - Mining - Data mining - P2P trading - AI Chat - Owner Golden diamond 9"
+  };
+  document.getElementById('robot-task').value=tasks[type]||tasks["GENERAL"];
+  executeRobotTask();
 }
-async function loadP2PTrades(){
-  let d=await apiGet("/api/p2p/trades");
-  let html=`💱 P2P TRADES LAST 50 + ESCROW LAST 20 - INFINITY - YAFI BINANCE - ESCROW SECURE - AUTO RELEASE - AI VERIFICATION:<br><br><b>TRADES:</b><br>`;
-  (d.trades||[]).reverse().forEach(t=>{html+=`[${t.created}] ${t.trade_id} - ${t.seller} -> ${t.buyer} - ${t.amount} ${t.from_token} -> ${t.to_token} = ${t.total} ${t.to_token} @ ${t.price} - Escrow ${t.escrow_id} - ${t.status} - ${t.payment_method} - ${t.infinity_feature}<br>`;});
-  html+=`<br><b>ESCROW:</b><br>`;
-  (d.escrow||[]).reverse().forEach(e=>{html+=`[${e.created}] Escrow ${e.escrow_id} - Order ${e.order_id} - ${e.seller} -> ${e.buyer} - ${e.amount} ${e.from_token} -> ${e.to_token} = ${e.total} ${e.to_token} - ${e.status} - INFINITY - YAFI BINANCE<br>`;});
-  document.getElementById('p2p-trades').innerHTML=html;
+async function executeRobotTask(){
+  let robot_id=document.getElementById('robot-id').value;
+  let task=document.getElementById('robot-task').value;
+  if(!task){alert("Enter task - Owner Golden diamond 9");return;}
+  let r=await apiPost("/api/robot/task",{robot_id,task});
+  document.getElementById('robot-task-result').innerHTML=`<b style="color:var(--gold)">Robot ${r.robot_id} - ${r.type} - Owner Golden diamond 9</b><br>
+  Task: ${r.task}<br>
+  Status: <span class="${r.status=='IDLE'?'status-idle':'status-working'}">${r.status}</span> - Battery ${r.battery}% - Tasks Completed ${r.tasks_completed}<br>
+  Data ${r.data_mb} MB - Reward ${r.reward_brb} BRB + ${r.reward_ugas} UGAS AI = Total ${r.total_brb} BRB + ${r.total_ugas} UGAS AI = $${(r.total_brb*0.01+r.total_ugas*0.00001).toFixed(4)}<br>
+  Block Hash ${r.block_hash} - TX ${r.tx} - Hashrate ${r.hashrate} H/s - Brain ${r.ai_brain}<br>
+  Capabilities: ${r.capabilities?.join(', ')}<br>
+  Sensors: ${r.sensors?.join(', ')} - Time ${r.time} - Owner Golden diamond 9 - AI ROBOT AUTONOMOUS`;
+  document.getElementById('log').innerHTML+=`<br>🤖 Robot Task: ${r.robot_id} - ${r.type} - ${r.task.substring(0,50)}... - ${r.total_brb} BRB + ${r.total_ugas} UGAS AI - Battery ${r.battery}% - Tasks ${r.tasks_completed} - Owner Golden diamond 9`;
+  loadRobots(); loadDashboard();
 }
-async function createProfile(){
-  let username=document.getElementById('profile-username').value||"Musa";
-  let phone=document.getElementById('profile-phone').value||"08012345678";
-  let verified=document.getElementById('profile-verified').checked;
-  let r=await apiPost("/api/p2p/create-profile",{username,phone,verified});
-  console.log("PROFILE:",r);
-  document.getElementById('profile-display').innerHTML=`👤 PROFILE CREATED: ${r.username} - ${r.verified?'✅ VERIFIED':''} - Rating ${r.rating}⭐ - Trades ${r.trades_count} - Volume BRB ${r.total_volume_brb} UGAS ${r.total_volume_ugas} - Badges ${r.badges.join(',')} - Joined ${r.joined} - ${r.bio} - Avatar <img src="${r.avatar}" style="width:40px;height:40px;border-radius:50%"> - P2P INFINITY - YAFI BINANCE`;
-  document.getElementById('log').innerHTML+=`<br>👤 PROFILE: ${r.username} - Verified ${r.verified} - Rating ${r.rating} - Trades ${r.trades_count} - Badges ${r.badges.join(',')} - P2P INFINITY - YAFI BINANCE`;
-}
-async function loadProfile(){
-  let username=document.getElementById('profile-username').value||"Musa";
-  let r=await apiGet(`/api/p2p/profile?username=${encodeURIComponent(username)}`);
-  console.log("PROFILE LOAD:",r);
-  document.getElementById('profile-display').innerHTML=`👤 PROFILE: ${r.username} - ${r.verified?'✅ VERIFIED':''} - Rating ${r.rating}⭐ - Trades ${r.trades_count} - Success ${r.success_rate}% - Volume BRB ${r.total_volume_brb} UGAS ${r.total_volume_ugas} - Badges ${r.badges.map(b=>`<span class="badge">${b}</span>`).join('')} - Joined ${r.joined} - ${r.bio} - Phone ${r.phone} - Avatar <img src="${r.avatar}" style="width:40px;height:40px;border-radius:50%"> - P2P INFINITY - YAFI BINANCE - PROFILE`;
+async function chatRobot(){
+  let robot_id=document.getElementById('chat-robot-id').value;
+  let message=document.getElementById('chat-message').value;
+  if(!message){alert("Enter message - Owner Golden diamond 9");return;}
+  let r=await apiPost("/api/robot/chat",{robot_id,message});
+  document.getElementById('chat-result').innerHTML=`<b style="color:var(--gold)">${r.robot_id} - ${r.type} - Battery ${r.battery}% - ${r.status} - Tasks ${r.tasks} - Owner ${r.owner}</b><br>
+  <span style="color:var(--cyan)">You:</span> ${r.message}<br>
+  <span style="color:var(--purple)">Robot:</span> ${r.reply}<br>
+  <span style="font-size:10px;color:var(--muted)">Owner Golden diamond 9 - AI ROBOT - GPT-4o + Quantum Brain</span>`;
+  document.getElementById('log').innerHTML+=`<br>💬 Robot Chat: ${r.robot_id} - You: ${r.message} - Robot: ${r.reply.substring(0,80)}... - Owner Golden diamond 9`;
 }
 
-// AI BLOCKCHAIN VISUAL
-let canvas, ctx, animationId, blocksVisual=[], isVisualRunning=false;
-function initCanvas(){canvas=document.getElementById('blockchain-canvas');if(!canvas)return;ctx=canvas.getContext('2d');canvas.width=canvas.offsetWidth;canvas.height=250;blocksVisual=[];}
-function startAIBlockchainVisual(){
-  initCanvas();isVisualRunning=true;blocksVisual=[];
-  document.getElementById('ai-visual-status').innerHTML="🌌 AI BLOCKCHAIN VISUAL - LIVE - Blocks flying - Hashes - AI Thinking - P2P INFINITY YAFI BINANCE - ME DAUKAR HANKALI";
-  function animate(){
-    if(!isVisualRunning)return;
-    ctx.fillStyle='rgba(0,0,0,0.2)';ctx.fillRect(0,0,canvas.width,canvas.height);
-    if(Math.random()<0.05){blocksVisual.push({x:-50,y:Math.random()*canvas.height,vx:2+Math.random()*3,vy:(Math.random()-0.5)*1,size:20+Math.random()*30,hash:Math.random().toString(16).substr(2,8),brb:100+Math.floor(Math.random()*50),ugas:1000+Math.floor(Math.random()*500),type:["NOMA","WELDER","DOCTOR","TEACHER","P2P INFINITY"][Math.floor(Math.random()*5)],color:`hsl(${Math.random()*60+180},100%,50%)`,aiThinking:Math.random()<0.3});}
-    for(let i=blocksVisual.length-1;i>=0;i--){
-      let b=blocksVisual[i];b.x+=b.vx;b.y+=b.vy;
-      ctx.fillStyle=b.color;ctx.shadowColor=b.color;ctx.shadowBlur=20;ctx.fillRect(b.x,b.y,b.size,b.size);ctx.shadowBlur=0;
-      ctx.fillStyle='#fff';ctx.font='10px monospace';ctx.fillText(`#${b.hash}`,b.x,b.y-5);ctx.fillText(`${b.type} ${b.brb} BRB+${b.ugas} UGAS AI`,b.x,b.y+b.size+12);
-      if(b.aiThinking){ctx.fillStyle='#f0f';ctx.fillText(`AI Thinking... P2P INFINITY`,b.x,b.y+b.size+24);}
-      if(b.x>canvas.width+100)blocksVisual.splice(i,1);
-    }
-    ctx.strokeStyle='rgba(0,255,255,0.2)';ctx.lineWidth=1;
-    for(let i=0;i<blocksVisual.length;i++){for(let j=i+1;j<blocksVisual.length;j++){let b1=blocksVisual[i],b2=blocksVisual[j];let dist=Math.hypot(b1.x-b2.x,b1.y-b2.y);if(dist<150){ctx.beginPath();ctx.moveTo(b1.x+b1.size/2,b1.y+b1.size/2);ctx.lineTo(b2.x+b2.size/2,b2.y+b2.size/2);ctx.stroke();}}}
-    ctx.fillStyle='#f0f';ctx.font='14px monospace';ctx.fillText(`BLACKRACK AI - P2P INFINITY YAFI BINANCE - Blocks: ${blocksVisual.length} - BRB+UGAS AI+P2P - ${new Date().toLocaleTimeString()}`,10,20);
-    animationId=requestAnimationFrame(animate);
-  }animate();
-}
-function stopAIBlockchainVisual(){isVisualRunning=false;if(animationId)cancelAnimationFrame(animationId);document.getElementById('ai-visual-status').innerHTML="🌌 AI BLOCKCHAIN VISUAL - PAUSED - P2P INFINITY YAFI BINANCE";}
-
-// AI CHATBOT
-async function sendAIMessage(){
-  let user=document.getElementById('ai-user').value||"Musa";
-  let message=document.getElementById('ai-message').value;
-  if(!message.trim()){alert("Rubuta tambayarka");return;}
-  let chatBox=document.getElementById('ai-chat-box');
-  chatBox.innerHTML+=`<div class="user-message">👤 <b>${user}:</b><br>${message}</div>`;
-  chatBox.scrollTop=chatBox.scrollHeight;
-  document.getElementById('ai-chat-status').innerHTML=`<span style="color:#f0f">🤖 BLACKRACK AI - AI THINKING... - P2P INFINITY YAFI BINANCE - Thinking...</span>`;
-  document.getElementById('ai-message').value="";
-  let result=await apiPost("/api/ai-chat",{user,message});
-  chatBox.innerHTML+=`<div class="ai-message">🤖 <b>BLACKRACK AI - ${result.model||'GPT-4o'} - P2P INFINITY YAFI BINANCE:</b><br>${(result.ai_response||'AI Error').replace(/\n/g,'<br>')}<br><small>TX:${result.tx} - Time:${result.time}</small></div>`;
-  chatBox.scrollTop=chatBox.scrollHeight;
-  document.getElementById('ai-chat-status').innerHTML=`🤖 BLACKRACK AI - AI RESPONSE DONE - P2P INFINITY YAFI BINANCE - TX:${result.tx}`;
-  document.getElementById('log').innerHTML+=`<br>🤖 AI CHAT: User:${result.user} - ${result.message?.substring(0,60)}... - AI:${(result.ai_response||'').substring(0,100)}... - TX:${result.tx}`;
-  loadDashboard();
-}
-function quickAI(question){document.getElementById('ai-message').value=question;sendAIMessage();}
-function clearAIChat(){document.getElementById('ai-chat-box').innerHTML=`<div class="ai-message">🤖 <b>BLACKRACK AI - P2P INFINITY YAFI BINANCE:</b><br>Sannu! Barka da zuwa BLACKRACK AI BLOCKCHAIN - P2P INFINITY MARKETPLACE YAFI BINANCE P2P! 🚀 Ina nan BLACKRACK AI - GPT-4o + Quantum Brain - Me daukar hankali - P2P INFINITY - BRB <-> UGAS AI <-> NGN - PROFILE + RATING + ESCROW + INFINITY - YAFI BINANCE - Tambaye ni komai!</div>`;}
-async function loadAIChats(){let d=await apiGet("/api/ai-chats");let html="🤖 AI Chats History Last 20 - P2P INFINITY YAFI BINANCE:<br>";(d.ai_chats||[]).forEach(c=>{html+=`[${c.time}] 👤 ${c.user}: ${c.message}<br>🤖 BLACKRACK AI: ${c.ai_response?.substring(0,300)}... - TX:${c.tx}<br><br>`;});document.getElementById('ai-chat-box').innerHTML=html;}
-
-// DASHBOARD ALL
+// ==================== DASHBOARD - OWNER GOLDEN DIAMOND 9 ====================
 async function loadDashboard(){
   let d=await apiGet("/api/dashboard");
   document.getElementById('dashboard').innerHTML=`<pre>${JSON.stringify(d,null,2)}</pre>`;
-  if(d.DATA) document.getElementById('data-counter').innerHTML=`📊 Data: ${d.DATA.total_mb?.toFixed(1)} MB = ${d.DATA.total_gb?.toFixed(2)} GB<br>💰 Earned: ${d.DATA.total_brb?.toFixed(1)} BRB + ${d.DATA.total_ugas?.toFixed(1)} UGAS AI = $${d.DATA.value_usd?.toFixed(4)}<br>⛏️ Data Mining - BRB+UGAS AI+P2P INFINITY - AI Chats: ${d.AI?.chats||0} - P2P Trades: ${d.P2P_INFINITY?.total_trades||0}`;
-  if(d.SUBSCRIPTION) document.getElementById('sub-status').innerHTML=`📊 Subs: ${d.SUBSCRIPTION.count} - BRB: ${d.SUBSCRIPTION.total_brb} - UGAS AI: ${d.SUBSCRIPTION.total_ugas} = $${d.SUBSCRIPTION.value_usd?.toFixed(2)}`;
-  if(d.MINING) document.getElementById('mining-status').innerHTML=`⛏️ Mined: ${d.MINING.total_mined_brb} BRB + ${d.MINING.total_mined_ugas} UGAS AI = $${d.MINING.value_usd?.toFixed(4)} - Blocks: ${d.MINING.blocks} - Hashrate: ${d.MINING.total_hash?.toFixed(0)} H/s - Energy: ${d.ENERGY?.total_kwh} kWh - Data: ${d.DATA?.total_mb?.toFixed(1)} MB - Gas Burned: ${d.UGAS_AI?.burned||0} UGAS AI - AI Chats: ${d.AI?.chats||0} - P2P Trades: ${d.P2P_INFINITY?.total_trades||0} - Bullish ${d.BULLISH}%`;
-  if(d.SECURITY) document.getElementById('security-status').innerHTML=`🛡️ Server Secure 99.99% - Threats Blocked: ${d.SECURITY.threats_blocked} - Tasks Done: ${d.SECURITY.tasks_done} - P2P INFINITY TRADES: ${d.P2P_INFINITY?.total_trades||0} - Volume ${d.P2P_INFINITY?.total_volume?.toFixed(2)} - Users ${d.P2P_INFINITY?.total_users} - Bullish ${d.BULLISH}%`;
-  if(d.P2P_INFINITY) document.getElementById('p2p-stats').innerHTML=`📊 P2P INFINITY STATS: Orders ${d.P2P_INFINITY.total_orders} - Active ${d.P2P_INFINITY.active_orders} - Trades ${d.P2P_INFINITY.total_trades} - Volume ${d.P2P_INFINITY.total_volume?.toFixed(2)} - Users ${d.P2P_INFINITY.total_users} - INFINITY - YAFI BINANCE<br>Features: ${d.P2P_INFINITY.features?.join(', ')}<br>Pairs: ${d.P2P_INFINITY.trading_pairs?.join(', ')}`;
+  document.getElementById('p2p-stats').innerHTML=`<b>Owner ${d.owner}</b><br>Orders ${d.p2p?.orders||0} - Trades ${d.p2p?.trades||0} - Users ${d.p2p?.users||0}<br>Robots ${d.ai_robots?.count||0} - Tasks ${d.ai_robots?.total_tasks||0} - BRB Earned ${d.ai_robots?.total_brb||0} - UGAS AI Earned ${d.ai_robots?.total_ugas||0}<br>BRB Supply ${d.brb?.supply} - Owner Balance ${d.brb?.owner_balance} - UGAS AI Supply ${d.ugas_ai?.supply} - Owner Balance ${d.ugas_ai?.owner_balance}<br>Blocks ${d.blockchain?.blocks} - Validators ${d.blockchain?.validators} - Chain ${d.blockchain?.chain_id}`;
 }
-async function loadBlocks(){let d=await apiGet("/api/blocks");let h="📦 Blockchain Last 20 Blocks - BRB+UGAS AI+P2P INFINITY:<br>";(d.blocks||[]).forEach(b=>{h+=`Block #${b.block_number} - ${b.robot_id} - ${b.type} - Hash:${b.block_hash.substring(0,16)}... - Reward:${b.total_brb} BRB+${b.total_ugas} UGAS AI=$${(b.total_brb*0.01+b.total_ugas*0.00001).toFixed(4)} - Data:${b.data_mb} MB - Gas:${b.gas_used} UGAS AI - TX:${b.tx} - ${b.time}<br>`;});document.getElementById('blockchain').innerHTML=h;}
-async function loadLogs(){let d=await apiGet("/api/logs");let h="🛡️ Logs Last 20 + NFTs Last 20 + AI Chats Last 20 + P2P INFINITY:<br>";(d.security_logs||[]).forEach(l=>{h+=`[${l.time}] BLOCKED! ${l.type} - ${l.detail.substring(0,60)}... - Gas:${l.gas_used} UGAS AI - TX:${l.tx}<br>`;});h+="<br>🎨 NFTs Last 20:<br>";(d.nfts||[]).forEach(n=>{h+=`[${n.time}] MINT: ${n.user} - ${n.brb} BRB+${n.ugas} UGAS AI - TX:${n.tx} - NFT:${n.nft_id}<br>`;});h+="<br>🤖 AI Chats Last 20:<br>";(d.ai_chats||[]).forEach(c=>{h+=`[${c.time}] 👤 ${c.user}: ${c.message.substring(0,60)}... - AI: ${c.ai_response?.substring(0,100)}... - TX:${c.tx}<br>`;});document.getElementById('security-logs').innerHTML=h;}
+async function loadBlocks(){
+  let d=await apiGet("/api/blocks");
+  let html="";
+  (d.blocks||[]).reverse().forEach(b=>{
+    html+=`Block #${b.number} - ${b.validator} - ${b.task} - ${b.reward_brb} BRB + ${b.reward_ugas} UGAS AI - Hash ${b.hash.substring(0,16)}... - TX 0x${b.hash.substring(0,12)} - ${b.time} - Owner Golden diamond 9<br>`;
+  });
+  document.getElementById('blocks').innerHTML=html||"No blocks - Owner Golden diamond 9";
+}
 
-// OTHER FUNCS
-function trackDataManual(){let user=document.getElementById('data-user').value||"Musa";let page=document.getElementById('data-page').value||"House1 Teacher";let mb=parseInt(document.getElementById('data-mb').value||150);apiPost("/api/data",{user,page,mb}).then(r=>{document.getElementById('log').innerHTML+=`<br>📊 DATA: ${r.page} - ${r.mb} MB = ${r.brb} BRB+${r.ugas} UGAS AI = $${(r.brb*0.01+r.ugas*0.00001).toFixed(4)} - TX:${r.tx}`;loadDashboard();});}
-setInterval(()=>{apiPost("/api/data",{user:"Auto - "+navigator.userAgent.substr(0,20),page:"Auto Data Mining - P2P INFINITY YAFI BINANCE",mb:1}).then(r=>{});},10000);
-function subscribe(){
-  let user=document.getElementById('sub-user').value||"Musa - Farmer";let planRaw=document.getElementById('sub-plan').value||"NOMA FARMER";let plan=planRaw.split(" - ")[0];let months=parseInt(document.getElementById('sub-months').value||1);
-  apiPost("/api/subscribe",{user,plan,months}).then(r=>{document.getElementById('sub-status').innerHTML=`✅ SUBSCRIBED: ${r.plan} - ${r.brb} BRB+${r.ugas} UGAS AI=$${(r.brb*0.01+r.ugas*0.00001).toFixed(2)} - ${r.months} month - ${r.tasks} tasks - TX:${r.tx} - SubID:${r.sub_id}`;document.getElementById('task-subid').value=r.sub_id||"";document.getElementById('log').innerHTML+=`<br>✅ SUBSCRIBE: ${r.plan} - ${r.brb} BRB+${r.ugas} UGAS AI - TX:${r.tx}`;loadDashboard();});
+// ==================== P2P FUNCTIONS - OWNER GOLDEN DIAMOND 9 ====================
+async function loadOrders(){
+  let d=await apiGet("/api/p2p/orders");
+  let html="";
+  (d.orders||[]).reverse().forEach(o=>{
+    html+=`<div class="order ${o.type.toLowerCase()}"><b>${o.order_id}</b> - <span style="color:${o.type=='SELL'?'#ef4444':'#22c55e'}">${o.type}</span> ${o.amount} ${o.from_token} -> ${o.to_token} @ ${o.price} - Total ${o.total.toFixed(2)} ${o.to_token}<br><span class="badge gold">${o.username}</span> ${o.profile?.verified?'<span class="badge verified">VERIFIED</span>':''} <span class="badge">Rating ${o.profile?.rating}⭐</span> <span class="badge">Trades ${o.profile?.trades}</span> <span class="badge">${o.profile?.badges?.join(',')}</span> - ${o.payment_method} - ${o.status} - ${o.created}<br><button onclick="document.getElementById('trade-id').value='${o.order_id}'">Select Order - Trade - Owner Golden diamond 9</button></div>`;
+  });
+  document.getElementById('p2p-orders').innerHTML=html||"No orders - Create one - Owner Golden diamond 9 - P2P Infinity Better than Binance P2P";
 }
-function quickSub(plan){document.getElementById('sub-plan').value=plan+" - "+{"NOMA FARMER":"500 BRB + 5000 UGAS AI/month - 30 tasks","WELDER":"800 BRB + 8000 UGAS AI/month - 20 tasks","MECHANIC":"700 BRB + 7000 UGAS AI/month - 25 tasks","DOCTOR":"1000 BRB + 10000 UGAS AI/month - 50 tasks - Doctor Teaches All","TEACHER":"600 BRB + 6000 UGAS AI/month - 60 tasks - Teacher Teaches All","SECURITY":"300 BRB + 3000 UGAS AI/month - 100 tasks - SERVER SECURITY 99.99%","ENERGY":"2000 BRB + 1000 UGAS AI/month - PRODUCES ENERGY! - BEST MINER","ALL IN ONE":"5000 BRB + 20000 UGAS AI/month - 500 tasks - FINAL ULTIMATE"}[plan];subscribe();}
-function doTask(){
-  let sub_id=document.getElementById('task-subid').value;let detail=document.getElementById('task-detail').value||"Task";
-  if(!sub_id){alert("Enter Sub ID - Subscribe first");return;}
-  apiPost("/api/task",{sub_id,detail}).then(r=>{if(r.error){alert(r.error);return;}document.getElementById('log').innerHTML+=`<br>🤖 TASK: ${r.plan} - ${r.detail.substring(0,60)}... - Total ${r.total_brb} BRB+${r.total_ugas} UGAS AI=$${(r.total_brb*0.01+r.total_ugas*0.00001).toFixed(4)} - TX:${r.tx}`;loadDashboard();});
+function loadOrdersFiltered(filter){
+  apiGet("/api/p2p/orders").then(d=>{
+    let html="";
+    (d.orders||[]).filter(o=>o.from_token.includes(filter)||o.to_token.includes(filter)).reverse().forEach(o=>{
+      html+=`<div class="order ${o.type.toLowerCase()}"><b>${o.order_id}</b> - ${o.type} ${o.amount} ${o.from_token} -> ${o.to_token} @ ${o.price} - Total ${o.total.toFixed(2)} ${o.to_token} - ${o.username} - ${o.payment_method} - ${o.status}<br><button onclick="document.getElementById('trade-id').value='${o.order_id}'">Trade This - Filter ${filter} - Owner Golden diamond 9</button></div>`;
+    });
+    document.getElementById('p2p-orders').innerHTML=html||`No orders for filter ${filter} - Owner Golden diamond 9`;
+  });
 }
-function mine(){
-  let robot_id=document.getElementById('mine-robot').value||`BLACKRACK-ROBOT-${String(Math.floor(Math.random()*999)+1).padStart(3,'0')}`;
-  let typeRaw=document.getElementById('mine-type').value||"ALL IN ONE";let type=typeRaw.split(" - ")[0];let task=document.getElementById('mine-task').value||"Mining BRB+UGAS AI";
-  apiPost("/api/register-miner",{robot_id,type}).then(()=>{apiPost("/api/mine",{robot_id,task}).then(r=>{document.getElementById('mining-status').innerHTML=`⛏️ BLOCK MINED! #${r.block_number} - ${r.robot_id} - ${r.type} - Reward:${r.total_brb} BRB+${r.total_ugas} UGAS AI=$${(r.total_brb*0.01+r.total_ugas*0.00001).toFixed(4)} - TX:${r.tx} - ${r.time}`;document.getElementById('blockchain').innerHTML+=`<br>📦 Block #${r.block_number} - ${r.robot_id} - Reward:${r.total_brb} BRB+${r.total_ugas} UGAS AI - TX:${r.tx}`;document.getElementById('log').innerHTML+=`<br>⛏️ BLOCK MINED! #${r.block_number} - ${r.type} - Reward:${r.total_brb} BRB+${r.total_ugas} UGAS AI`;loadDashboard();if(isVisualRunning){blocksVisual.push({x:-50,y:Math.random()*250,vx:2+Math.random()*3,vy:(Math.random()-0.5)*1,size:25+Math.random()*25,hash:r.block_hash.substring(0,8),brb:r.total_brb,ugas:r.total_ugas,type:r.type,color:`hsl(${Math.random()*60+180},100%,50%)`,aiThinking:true});}});});
+async function loadTrades(){
+  let d=await apiGet("/api/p2p/trades");
+  let html="<b>P2P Trades - Owner Golden diamond 9 - P2P Infinity Better than Binance P2P:</b><br>";
+  (d.trades||[]).reverse().forEach(t=>{
+    html+=`${t.trade_id} - ${t.seller} -> ${t.buyer} - ${t.amount} ${t.from_token} -> ${t.to_token} = ${t.total.toFixed(2)} ${t.to_token} - ${t.status} - ${t.created} - Owner Golden diamond 9<br>`;
+  });
+  document.getElementById('p2p-trades').innerHTML=html;
 }
-function quickMine(type){document.getElementById('mine-type').value=type+" - "+{"NOMA FARMER":"100 H/s","WELDER":"150 H/s","MECHANIC":"120 H/s","DOCTOR":"200 H/s","TEACHER":"250 H/s","SECURITY":"200 H/s","ENERGY":"500 H/s - PRODUCES ENERGY! - BEST!","ALL IN ONE":"1000 H/s - AGI - SUPER MINER"}[type];document.getElementById('mine-robot').value=`BLACKRACK-ROBOT-${String(Math.floor(Math.random()*999)+1).padStart(3,'0')}-${type.replace(/ /g,'-')}`;document.getElementById('mine-task').value=`${type} - ${{"NOMA FARMER":"Shuka Masara 1 Hectare","WELDER":"Waldi Kofa Iron Door","MECHANIC":"Gyaran Mota Toyota Corolla","DOCTOR":"Ciwon kai Headache - Doctor Teaches All","TEACHER":"Maths x+2=5->x=3! - Teacher Teaches All","SECURITY":"Tsaro Barawo Thief Gobara Fire - Server Secure 99.99%","ENERGY":"PRODUCES ENERGY! Solar 10MW 5000 kWh/day - BEST!","ALL IN ONE":"Noma+Welder+Mechanic+Doctor+Teacher+All - AGI Quantum Brain - SUPER MINER - FINAL ULTIMATE"}[type]} - BRB+UGAS AI+P2P INFINITY`;mine();}
-function securityCheck(){let type=document.getElementById('sec-type').value||"BARAWO THIEF";let detail=document.getElementById('sec-detail').value||"Thief at House1";apiPost("/api/security",{type,detail}).then(r=>{document.getElementById('security-status').innerHTML=`🛡️ THREAT BLOCKED! ${r.type} - ${r.detail.substring(0,60)}... - Gas:${r.gas_used} UGAS AI - TX:${r.tx} - NFT:${r.nft} - Blocked:${r.blocked}`;document.getElementById('security-logs').innerHTML+=`<br>🛡️ [${r.time}] BLOCKED! ${r.type} - ${r.detail} - Gas:${r.gas_used} UGAS AI - TX:${r.tx}`;document.getElementById('log').innerHTML+=`<br>🛡️ SECURITY BLOCKED! ${r.type} - Gas:${r.gas_used} UGAS AI - TX:${r.tx}`;loadDashboard();});}
-function quickSec(type,detail){document.getElementById('sec-type').value=type;document.getElementById('sec-detail').value=detail;securityCheck();}
-function mintDual(){let user=document.getElementById('mint-user').value||"Musa";let brb=parseInt(document.getElementById('mint-brb').value||1000);let ugas=parseInt(document.getElementById('mint-ugas').value||10000);let type=document.getElementById('mint-type').value||"BRB+UGAS AI NFT";apiPost("/api/mint",{user,brb,ugas,type}).then(r=>{document.getElementById('log').innerHTML+=`<br>✅ MINT: ${r.user} - ${r.brb} BRB+${r.ugas} UGAS AI - TX:${r.tx} - NFT:${r.nft_id}`;loadDashboard();});}
-function stakeDual(){let user=document.getElementById('stake-user').value||"Musa";let brb=parseInt(document.getElementById('stake-brb').value||1000);let ugas=parseInt(document.getElementById('stake-ugas').value||10000);apiPost("/api/stake",{user,brb,ugas}).then(r=>{document.getElementById('log').innerHTML+=`<br>💹 STAKE: ${r.user} - ${r.brb} BRB 78% + ${r.ugas} UGAS AI 22% - TVL ${r.tvl_brb} BRB+${r.tvl_ugas} UGAS AI`;loadDashboard();});}
+async function createOrder(){
+  let username=document.getElementById('p2p-user').value||"Golden diamond 9";
+  let type=document.getElementById('p2p-type').value;
+  let from_token=document.getElementById('p2p-from').value;
+  let to_token=document.getElementById('p2p-to').value;
+  let amount=document.getElementById('p2p-amount').value;
+  let price=document.getElementById('p2p-price').value;
+  let payment=document.getElementById('p2p-payment').value;
+  let r=await apiPost("/api/p2p/create-order",{username,type,from_token,to_token,amount,price,payment});
+  document.getElementById('log').innerHTML+=`<br>💱 Order Created: ${r.order_id} - ${r.username} - ${r.type} ${r.amount} ${r.from_token} -> ${r.to_token} @ ${r.price} - Total ${r.total} ${r.to_token} - ${r.payment_method} - ${r.status} - Owner Golden diamond 9 - P2P Infinity Better than Binance P2P`;
+  loadOrders(); loadDashboard();
+}
+async function doTrade(){
+  let order_id=document.getElementById('trade-id').value;
+  let buyer=document.getElementById('trade-buyer').value;
+  let amount=document.getElementById('trade-amount').value;
+  if(!order_id){alert("Enter Order ID - Owner Golden diamond 9");return;}
+  let r=await apiPost("/api/p2p/trade",{order_id,buyer,amount});
+  if(r.error){alert(r.error);return;}
+  document.getElementById('log').innerHTML+=`<br>💱 Trade Executed: ${r.trade_id} - ${r.seller} -> ${r.buyer} - ${r.amount} ${r.from_token} -> ${r.to_token} = ${r.total.toFixed(2)} ${r.to_token} - ${r.status} - ${r.created} - Owner Golden diamond 9 - P2P Infinity`;
+  document.getElementById('p2p-trades').innerHTML+=`<br>${r.trade_id} - ${r.seller} -> ${r.buyer} - ${r.amount} ${r.from_token} -> ${r.to_token} = ${r.total.toFixed(2)} ${r.to_token} - ${r.status} - Owner Golden diamond 9`;
+  loadOrders(); loadDashboard();
+}
+async function mine(){
+  let validator=document.getElementById('mine-validator').value;
+  let task=document.getElementById('mine-task').value;
+  let r=await apiPost("/api/mine",{validator,task});
+  document.getElementById('blocks').innerHTML+=`<br>Block #${r.number} - ${r.validator} - ${r.task} - ${r.reward_brb} BRB + ${r.reward_ugas} UGAS AI - Hash ${r.hash.substring(0,16)}... - TX 0x${r.hash.substring(0,12)} - ${r.time} - Owner Golden diamond 9`;
+  document.getElementById('log').innerHTML+=`<br>⛏️ Block Mined: #${r.number} - ${r.validator} - ${r.task} - ${r.reward_brb} BRB + ${r.reward_ugas} UGAS AI - Hash ${r.hash.substring(0,16)}... - Owner Golden diamond 9`;
+  loadDashboard();
+}
+async function mint(){
+  let user=document.getElementById('mint-user').value;
+  let brb=document.getElementById('mint-brb').value;
+  let ugas=document.getElementById('mint-ugas').value;
+  let r=await apiPost("/api/mint",{user,brb,ugas});
+  document.getElementById('log').innerHTML+=`<br>✅ Mint: ${r.user} - ${r.brb} BRB + ${r.ugas} UGAS AI - Owner ${r.owner} - Golden diamond 9`;
+  loadDashboard();
+}
 
+// ==================== ON LOAD - OWNER GOLDEN DIAMOND 9 ====================
 window.onload=()=>{
-  initCanvas(); startAIBlockchainVisual(); loadDashboard(); loadP2POrders(); loadP2PTrades();
-  console.log("🚀 BLACKRACK AI BLOCKCHAIN - HTML ALL - HADE DUKA - P2P INFINITY YAFI BINANCE - BRB+UGAS AI+AI+P2P - WAJE DAYA - FINAL ULTIMATE");
-  let size=document.documentElement.innerHTML.length/1024/1024;size=Math.max(size,2);apiPost("/api/data",{user:"Anonymous - Page Load ALL - P2P INFINITY YAFI BINANCE",page:document.title+" - Page Load ALL - "+size.toFixed(2)+" MB - BRB+UGAS AI+P2P INFINITY",mb:Math.floor(size*10)}).then(r=>{});
+  loadRobots();
+  loadDashboard();
+  loadOrders();
+  loadBlocks();
+  console.log("BLACKRACK AI BLOCKCHAIN - Owner Golden diamond 9 - AI ROBOT FLEET - BRB + UGAS AI - P2P Infinity Better than Binance P2P - Clean Version - Full Complete - No Musa - No Hausa - English Only - Professional");
+  document.getElementById('log').innerHTML+=`<br>🌐 Page Loaded - Owner Golden diamond 9 - AI ROBOT Fleet 9 Robots Active - BRB 10M + UGAS AI 100M - P2P Infinity Better than Binance P2P - Blockchain One - Two Tokens Inside - Clean Version - Full Complete - No Musa - No Hausa - English Only - Professional - Final`;
 };
-window.onresize=()=>{initCanvas();};
 </script>
-
 </body>
-                                                                             </html>
+                                   </html>
