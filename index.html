@@ -3,324 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BLACKRACK AI BLOCKCHAIN - AI ROBOT - Owner Golden diamond 9 - BRB + UGAS AI - P2P Infinity</title>
-<style>
-:root{--bg:#0a0a0a;--card:#111;--border:#222;--gold:#d4af37;--cyan:#00e5ff;--purple:#a855f7;--green:#22c55e;--red:#ef4444;--text:#e5e5e5;--muted:#888}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.6;padding:20px;max-width:1400px;margin:0 auto}
-h1,h2,h3{color:var(--gold);font-weight:600;letter-spacing:0.3px}
-.header{text-align:center;padding:50px 20px;border:1px solid var(--border);margin-bottom:24px;background:linear-gradient(135deg,#111 0%,#1a1a0a 100%);border-radius:16px}
-.header h1{font-size:36px;margin-bottom:8px}
-.header p{color:var(--muted);margin-top:8px;font-size:14px}
-.owner-badge{display:inline-block;background:var(--gold);color:#000;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:800;margin-top:16px;letter-spacing:0.5px}
-.card{border:1px solid var(--border);background:var(--card);padding:24px;margin-bottom:20px;border-radius:12px}
-.card h2{font-size:18px;margin-bottom:16px;border-bottom:1px solid var(--border);padding-bottom:10px;display:flex;align-items:center;gap:8px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-@media(max-width:900px){.grid{grid-template-columns:1fr} .header h1{font-size:24px}}
-button{background:var(--gold);color:#000;border:none;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer;margin:4px;font-size:13px;transition:all 0.2s}
-button:hover{opacity:0.9;transform:translateY(-1px)}button.secondary{background:transparent;border:1px solid var(--border);color:var(--text)}button.cyan{background:var(--cyan)}button.purple{background:var(--purple);color:#fff}
-input,select,textarea{background:#000;border:1px solid var(--border);color:var(--text);padding:10px;border-radius:8px;margin:4px;font-size:13px}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
-.robot-card{border:1px solid var(--border);background:#0f0f0f;padding:16px;margin:10px 0;border-radius:10px;display:flex;gap:16px;align-items:flex-start;transition:all 0.2s}
-.robot-card:hover{border-color:var(--gold);transform:translateY(-1px)}
-.robot-icon{width:56px;height:56px;background:linear-gradient(135deg,var(--cyan),var(--purple));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
-.status-idle{color:var(--green);font-weight:700}.status-working{color:var(--gold);font-weight:700}
-.battery{height:6px;background:#222;border-radius:3px;overflow:hidden;margin-top:6px;width:100%}
-.battery-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));transition:width 0.5s}
-.badge{background:#222;color:#fff;padding:3px 8px;border-radius:10px;font-size:11px;margin-right:4px;display:inline-block}
-.badge.gold{background:var(--gold);color:#000;font-weight:700}.badge.verified{background:var(--cyan);color:#000;font-weight:700}.badge.battery-badge{background:var(--green);color:#000}
-.log{max-height:350px;overflow:auto;background:#000;border:1px solid var(--border);padding:12px;font-size:12px;border-radius:8px;line-height:1.8}
-.order{border-left:3px solid var(--cyan);padding:12px;background:#0f0f0f;margin:8px 0;border-radius:6px;font-size:13px}
-.order.sell{border-left-color:var(--red)}.order.buy{border-left-color:var(--green)}
-</style>
+<title>BLACKRACK AI BLOCKCHAIN - Home - P2P + Future - Owner Golden diamond 9</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="header">
+<div class="diamond"><span>9</span></div>
 <h1>BLACKRACK AI BLOCKCHAIN</h1>
-<p>BRB + UGAS AI Dual Token - Blockchain One - Two Tokens Inside - AI ROBOT Fleet - P2P Infinity Marketplace</p>
-<p>Better than Binance P2P - BRB <-> UGAS AI <-> NGN - Infinity Trading - Autonomous AI Robots</p>
-<div class="owner-badge">OWNER: Golden diamond 9 - Founder & CEO - 100% Owner - AI ROBOT OWNER - 10M BRB + 100M UGAS AI</div>
-</div>
-
-<div class="card">
-<h2>🤖 AI ROBOT FLEET - Owner Golden diamond 9 - 9 Robots Active - Autonomous</h2>
-<p style="color:var(--muted);font-size:13px;margin-bottom:12px">Each robot has AI Brain GPT-4o + Quantum 1M Qubits - Battery Management - Hashrate 100-1000 H/s - Capabilities - Sensors Vision Lidar Thermal Audio - Autonomous Task Execution - Mining - P2P Trading - Chat Intelligence - Owner Golden diamond 9</p>
-<div style="margin-bottom:12px">
-<button onclick="loadRobots()">Refresh Robots - AI Fleet</button>
-<button class="secondary" onclick="loadDashboard()">Refresh Dashboard</button>
-<button class="secondary" onclick="loadBlocks()">Refresh Blocks</button>
-</div>
-<div id="robots">Loading AI Robots - Owner Golden diamond 9...</div>
+<p>BRB + UGAS AI Dual Token - Black Stone Crypto - P2P Token to Naira - Future AI</p>
+<div class="owner-badge">💎 OWNER: Golden diamond 9 - 10M BRB + 100M UGAS AI - HOME PAGE - PREMIUM FRESH</div>
 </div>
 
 <div class="grid">
-<div class="card">
-<h2>🔧 Robot Task Execution - AI ROBOT - Owner Golden diamond 9</h2>
-<select id="robot-id" style="width:100%;margin-bottom:8px">
-<option>AI-ROBOT-001-NOMA</option>
-<option>AI-ROBOT-002-WELDER</option>
-<option>AI-ROBOT-003-MECHANIC</option>
-<option>AI-ROBOT-004-DOCTOR</option>
-<option>AI-ROBOT-005-TEACHER</option>
-<option>AI-ROBOT-006-SECURITY</option>
-<option>AI-ROBOT-007-ENERGY</option>
-<option>AI-ROBOT-008-P2P_TRADER</option>
-<option>AI-ROBOT-009-GENERAL</option>
-</select>
-<textarea id="robot-task" placeholder="Task description - e.g. Planting maize 1 hectare - Soil analysis - Autonomous" style="width:100%;height:70px">Planting maize 1 hectare - Soil analysis - Drone spray - Autonomous - Owner Golden diamond 9</textarea>
-<button onclick="executeRobotTask()" style="width:100%;margin-top:8px">Execute Task - AI ROBOT - Autonomous</button>
-<div id="robot-task-result" style="margin-top:12px;font-size:12px;background:#000;padding:12px;border-radius:8px;border:1px solid var(--border);min-height:80px">Task result will appear here - AI Robot - Owner Golden diamond 9 - BRB + UGAS AI Reward - Battery - Hashrate - Block Hash - TX</div>
+<div class="card blue">
+<h2 class="blue">💱 P2P INFINITY - Token to Naira</h2>
+<p style="color:#a1a1aa;font-size:13px">Person to person trading - BRB Token to Naira - Secure instant - Escrow system - Bank transfer / Opay - Lagos Nigeria - Real user to user exchange</p>
+<img src="bg-p2p-token-to-naira.png" alt="P2P Token to Naira" class="visual blue" onerror="this.style.display='none'">
+<p style="margin-top:12px;color:#888;font-size:11px">1 BRB = NGN 15 = $0.01 - Instant - No limit - Escrow - Black + Blue design - Premium</p>
+<div style="margin-top:12px"><span class="badge blue">💱 P2P - BLUE</span><span class="badge gradient">BRB → NGN</span></div>
 </div>
 
-<div class="card">
-<h2>💬 Robot Chat - AI Intelligence - Owner Golden diamond 9</h2>
-<select id="chat-robot-id" style="width:100%;margin-bottom:8px">
-<option>AI-ROBOT-001-NOMA</option>
-<option>AI-ROBOT-004-DOCTOR</option>
-<option>AI-ROBOT-005-TEACHER</option>
-<option>AI-ROBOT-008-P2P_TRADER</option>
-<option>AI-ROBOT-009-GENERAL</option>
-</select>
-<input id="chat-message" value="hello" placeholder="Message to robot - hello, status, work" style="width:70%">
-<button onclick="chatRobot()">Chat with Robot - AI</button>
-<div id="chat-result" style="margin-top:12px;font-size:12px;background:#000;padding:12px;border-radius:8px;border:1px solid var(--border);min-height:80px">Chat: AI Robot will reply here - Owner Golden diamond 9 - Try hello, status, work - GPT-4o + Quantum Brain</div>
-<p style="margin-top:10px;font-size:11px;color:var(--muted)">Try: hello, status, work, or any task - AI Robot - GPT-4o + Quantum Brain - Owner Golden diamond 9</p>
+<div class="card purple">
+<h2 class="purple">🚀 Buy Sell - Crypto Future - AI Future - Unimaginable</h2>
+<p style="color:#a1a1aa;font-size:13px">Crypto future and AI future that imagination cannot imagine - Holographic AI brain trading BRB + UGAS AI - Quantum computing - Predictive AI 99.98% - 2050 future - Flying cars - Neural quantum</p>
+<img src="bg-future-buy-sell.png" alt="Future Buy Sell" class="visual purple" onerror="this.style.display='none'">
+<p style="margin-top:12px;color:#888;font-size:11px">BUY & SELL // CRYPTO FUTURE // AI FUTURE // UNIMAGINABLE - Quantum Core Q-9000 - Premium</p>
+<div style="margin-top:12px"><span class="badge purple">🚀 FUTURE - PURPLE</span><span class="badge gradient">AI + QUANTUM</span></div>
 </div>
 </div>
 
-<div class="card">
-<h2>💱 P2P Infinity Marketplace - Better than Binance P2P - Owner Golden diamond 9</h2>
-<p style="color:var(--muted);font-size:13px;margin-bottom:12px">Trading Pairs: BRB/UGAS AI | UGAS AI/BRB | BRB/NGN | NGN/BRB | UGAS AI/NGN | BRB/USDT - Features: No Limit - Instant Release - Escrow Secure - Profile + Rating + Badges - Dual Token - Better than Binance P2P - Owner Golden diamond 9</p>
-<div class="grid">
-<div>
-<h3>Create Order - P2P Infinity</h3>
-<input id="p2p-user" value="Golden diamond 9" placeholder="Username - Owner Golden diamond 9">
-<select id="p2p-type"><option>SELL</option><option>BUY</option></select>
-<select id="p2p-from"><option>BRB</option><option>UGAS AI</option><option>NGN</option></select> to
-<select id="p2p-to"><option>UGAS AI</option><option>BRB</option><option>NGN</option></select><br>
-<input id="p2p-amount" type="number" value="100" placeholder="Amount">
-<input id="p2p-price" type="number" value="1000" placeholder="Price per unit">
-<input id="p2p-payment" value="Bank Transfer" placeholder="Payment Method"><br>
-<button onclick="createOrder()" class="cyan" style="width:100%;margin-top:8px">Create Order - P2P Infinity - Better than Binance</button>
-</div>
-<div>
-<h3>Execute Trade - Escrow Secure</h3>
-<input id="trade-id" placeholder="Order ID e.g. P2P-000001" style="width:100%;margin-bottom:6px">
-<input id="trade-buyer" value="Trader" placeholder="Buyer Username" style="width:60%">
-<input id="trade-amount" type="number" value="10" placeholder="Amount" style="width:30%"><br>
-<button onclick="doTrade()" class="purple" style="width:100%;margin-top:8px">Execute Trade - Escrow - Instant - Owner Golden diamond 9</button>
-<div id="p2p-stats" style="margin-top:12px;font-size:12px;color:var(--muted);background:#000;padding:8px;border-radius:6px;border:1px solid var(--border)">Stats loading - Owner Golden diamond 9...</div>
-</div>
-</div>
-<div style="margin-top:16px">
-<button onclick="loadOrders()">Refresh Orders - P2P Infinity</button>
-<button class="secondary" onclick="loadOrdersFiltered('BRB')">Filter BRB</button>
-<button class="secondary" onclick="loadOrdersFiltered('UGAS AI')">Filter UGAS AI</button>
-<button class="secondary" onclick="loadTrades()">Load Trades</button>
-</div>
-<div id="p2p-orders" style="margin-top:12px">Loading P2P orders - Owner Golden diamond 9 - Better than Binance P2P...</div>
-<div id="p2p-trades" style="margin-top:12px;font-size:11px;background:#000;padding:10px;border-radius:6px;border:1px solid var(--border)">Trades will appear here - Owner Golden diamond 9</div>
-</div>
-
-<div class="grid">
-<div class="card">
-<h2>📊 Dashboard - Owner Golden diamond 9 - BRB + UGAS AI + AI ROBOT + P2P</h2>
-<div id="dashboard" style="font-size:11px;background:#000;padding:10px;border-radius:6px;border:1px solid var(--border);max-height:400px;overflow:auto">Loading Dashboard - Owner Golden diamond 9...</div>
-<button onclick="loadDashboard()" style="margin-top:10px">Refresh Dashboard - Owner Golden diamond 9</button>
-</div>
-<div class="card">
-<h2>⛏️ Mining + Mint - Owner Golden diamond 9 - BRB + UGAS AI</h2>
-<h3>Mine Block - Blockchain</h3>
-<input id="mine-validator" value="Validator-001" placeholder="Validator - Owner Golden diamond 9" style="width:60%">
-<input id="mine-task" value="Validation - Owner Golden diamond 9" placeholder="Task" style="width:100%;margin-top:6px">
-<button onclick="mine()" style="width:100%;margin-top:8px">Mine Block - 100 BRB + 1000 UGAS AI Reward</button>
-<h3 style="margin-top:16px">Mint - Dual Token</h3>
-<input id="mint-user" value="Golden diamond 9" placeholder="Username - Owner Golden diamond 9" style="width:60%">
-<input id="mint-brb" type="number" value="100" placeholder="BRB" style="width:18%">
-<input id="mint-ugas" type="number" value="1000" placeholder="UGAS AI" style="width:18%">
-<button onclick="mint()" style="width:100%;margin-top:8px">Mint BRB + UGAS AI - Owner Golden diamond 9</button>
-<div id="blocks" style="margin-top:12px;font-size:11px;background:#000;padding:10px;border-radius:6px;border:1px solid var(--border);max-height:200px;overflow:auto">Blocks will appear here - Owner Golden diamond 9 - Mining - BRB + UGAS AI</div>
+<div class="card gradient">
+<h2 class="gradient">📊 Dashboard - Black Stone Crypto - Home</h2>
+<p style="color:#a1a1aa;font-size:12px">Black Stone Crypto - BRB Supply 10M - UGAS AI Supply 100M - 1 BRB = 1000 UGAS AI = 1 kWh = $0.01 - 9 AI Robots - P2P Orders - Blockchain - Owner Golden diamond 9 - Black + Purple Blue + Gold - Premium</p>
+<div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
+<a href="alien-ai.html" style="background:linear-gradient(135deg, #a855f7 0%, #00e5ff 100%);color:#fff;padding:10px 20px;border-radius:10px;font-weight:800;font-size:11px;text-decoration:none">👽 Alien AI Page →</a>
+<a href="logo-9.html" style="background:linear-gradient(135deg, #d4af37 0%, #a855f7 100%);color:#fff;padding:10px 20px;border-radius:10px;font-weight:800;font-size:11px;text-decoration:none">💎 Logo 9 Center Page →</a>
+<a href="kano-heritage.html" style="background:#111;border:1px solid #d4af37;color:#d4af37;padding:10px 20px;border-radius:10px;font-weight:800;font-size:11px;text-decoration:none">🏰 Kano Heritage Page →</a>
 </div>
 </div>
 
-<div class="card">
-<h2>🗺️ Roadmap Q1-Q8 - Owner Golden diamond 9 - BRB + UGAS AI + AI ROBOT + P2P Infinity</h2>
-<div style="font-size:13px;line-height:1.8;color:var(--muted)">
-<p><b style="color:var(--gold)">Q1 Launch:</b> 300K BRB - Genesis - 12 Houses - 60 Robots - 9 AI Robots Active - Owner Golden diamond 9 - Foundation</p>
-<p><b style="color:var(--gold)">Q2 Wallet & Staking + P2P Infinity + AI ROBOT:</b> 1M BRB TVL $100K - P2P Marketplace Better than Binance P2P - BRB<->UGAS AI<->NGN - AI Robot Fleet 9 Robots - Chat + Task Automation - Owner Golden diamond 9</p>
-<p><b style="color:var(--gold)">Q3 DeFi + AI ROBOT Scale:</b> 3M BRB - DEX + Lending - Trading Bot - AI Robot Scale 50 Robots - Autonomous Farming Welding Mechanic Doctor Teacher Security Energy</p>
-<p><b style="color:var(--gold)">Q4 NFT + P2P NFT + AI ROBOT NFT:</b> 5M BRB - NFT Marketplace - Robot NFT - Task NFT - AI Robot Collectibles - Owner Golden diamond 9</p>
-<p><b style="color:var(--gold)">Q5 Metaverse + AI ROBOT VR:</b> 7M BRB - VR + Land - AI Robot Avatar - VR Training - Metaverse Robot Fleet - Owner Golden diamond 9</p>
-<p><b style="color:var(--gold)">Q6 Energy Grid + AI ROBOT Energy:</b> 8.5M BRB - Solar 10MW - 1M kWh/day - $100K/month - AI Robot Energy Management - Battery Management - Grid Optimization - Owner Golden diamond 9</p>
-<p><b style="color:var(--gold)">Q7 DAO Scale + AI ROBOT DAO:</b> 9.5M BRB - 1M Users - DAO Governance - AI Robot Voting - Robot DAO - Owner Golden diamond 9</p>
-<p><b style="color:var(--gold)">Q8 Robotics Automation Final Ultimate + AI ROBOT Singularity:</b> 10M BRB $100K/month - 100M UGAS AI - P2P Infinity Final - 1000 Houses - 10K Robots - AI Robot Singularity - AGI Superintelligence - Owner Golden diamond 9 - Final Ultimate</p>
-</div>
-</div>
-
-<div class="card">
-<h2>📝 System Log - Owner Golden diamond 9 - AI ROBOT - BRB + UGAS AI - P2P Infinity</h2>
-<div id="log" class="log">Ready - BLACKRACK AI BLOCKCHAIN - Owner Golden diamond 9 - AI ROBOT FLEET INCLUDED - Clean Version - BRB + UGAS AI Dual Token - P2P Infinity Better than Binance P2P - Blockchain One - Two Tokens Inside - 9 AI Robots Active - No Musa - No Hausa - English Only - Professional - Final Complete</div>
-</div>
-
-<script>
-// ==================== API HELPERS - OWNER GOLDEN DIAMOND 9 ====================
-const API="";
-async function apiGet(p){try{let r=await fetch(API+p);return await r.json();}catch(e){return {error:e.toString()}}}
-async function apiPost(p,b){try{let r=await fetch(API+p,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});return await r.json();}catch(e){return {error:e.toString()}}}
-
-// ==================== AI ROBOT FUNCTIONS - OWNER GOLDEN DIAMOND 9 ====================
-async function loadRobots(){
-  let d=await apiGet("/api/robots");
-  let html="";
-  (d.robots||[]).forEach(r=>{
-    html+=`<div class="robot-card">
-    <div class="robot-icon">🤖</div>
-    <div style="flex:1">
-    <b>${r.id}</b> - ${r.type} - <span class="${r.status=='IDLE'?'status-idle':'status-working'}">${r.status}</span> - <span class="badge gold">Owner ${d.owner}</span><br>
-    <span style="font-size:11px;color:#888">Battery ${r.battery}% - Tasks ${r.tasks} - BRB ${r.brb} - UGAS AI ${r.ugas} - Hashrate ${r.hashrate} H/s - Brain ${r.brain}</span>
-    <div class="battery"><div class="battery-fill" style="width:${r.battery}%"></div></div>
-    <span style="font-size:10px;color:#666">Capabilities: ${r.capabilities?.join(', ')} | Sensors: ${r.sensors?.join(', ')}</span><br>
-    <button onclick="document.getElementById('robot-id').value='${r.id}';document.getElementById('chat-robot-id').value='${r.id}'">Select This Robot - Owner Golden diamond 9</button>
-    <button class="secondary" onclick="quickTask('${r.id}','${r.type}')">Quick Task - ${r.type}</button>
-    </div>
-    </div>`;
-  });
-  document.getElementById('robots').innerHTML=html||"No robots - Owner Golden diamond 9";
-}
-function quickTask(robotId, type){
-  document.getElementById('robot-id').value=robotId;
-  const tasks={
-    "NOMA":"Planting maize 1 hectare - Soil analysis pH 6.5 - Drone spray - Autonomous - Owner Golden diamond 9",
-    "WELDER":"Welding iron door - 3D metal print - Quality check - Laser cutting - Owner Golden diamond 9",
-    "MECHANIC":"Diagnosis Toyota Corolla - Engine overheat - Repair - Test drive - Owner Golden diamond 9",
-    "DOCTOR":"Headache diagnosis - Scan - Prescription Paracetamol - Telemedicine - Owner Golden diamond 9",
-    "TEACHER":"Math x+2=5 -> x=3 - English My name is Golden diamond 9 - VR Class - Owner Golden diamond 9",
-    "SECURITY":"Patrol House 1 - Face recognition - Thief detection - Fire detection - Owner Golden diamond 9",
-    "ENERGY":"Solar 10MW control - Battery 100% - Energy trading - Power distribution - Owner Golden diamond 9",
-    "P2P_TRADER":"Order matching BRB/UGAS AI - Price prediction - Auto trading - Escrow - Owner Golden diamond 9",
-    "GENERAL":"General task - Mining - Data mining - P2P trading - AI Chat - Owner Golden diamond 9"
-  };
-  document.getElementById('robot-task').value=tasks[type]||tasks["GENERAL"];
-  executeRobotTask();
-}
-async function executeRobotTask(){
-  let robot_id=document.getElementById('robot-id').value;
-  let task=document.getElementById('robot-task').value;
-  if(!task){alert("Enter task - Owner Golden diamond 9");return;}
-  let r=await apiPost("/api/robot/task",{robot_id,task});
-  document.getElementById('robot-task-result').innerHTML=`<b style="color:var(--gold)">Robot ${r.robot_id} - ${r.type} - Owner Golden diamond 9</b><br>
-  Task: ${r.task}<br>
-  Status: <span class="${r.status=='IDLE'?'status-idle':'status-working'}">${r.status}</span> - Battery ${r.battery}% - Tasks Completed ${r.tasks_completed}<br>
-  Data ${r.data_mb} MB - Reward ${r.reward_brb} BRB + ${r.reward_ugas} UGAS AI = Total ${r.total_brb} BRB + ${r.total_ugas} UGAS AI = $${(r.total_brb*0.01+r.total_ugas*0.00001).toFixed(4)}<br>
-  Block Hash ${r.block_hash} - TX ${r.tx} - Hashrate ${r.hashrate} H/s - Brain ${r.ai_brain}<br>
-  Capabilities: ${r.capabilities?.join(', ')}<br>
-  Sensors: ${r.sensors?.join(', ')} - Time ${r.time} - Owner Golden diamond 9 - AI ROBOT AUTONOMOUS`;
-  document.getElementById('log').innerHTML+=`<br>🤖 Robot Task: ${r.robot_id} - ${r.type} - ${r.task.substring(0,50)}... - ${r.total_brb} BRB + ${r.total_ugas} UGAS AI - Battery ${r.battery}% - Tasks ${r.tasks_completed} - Owner Golden diamond 9`;
-  loadRobots(); loadDashboard();
-}
-async function chatRobot(){
-  let robot_id=document.getElementById('chat-robot-id').value;
-  let message=document.getElementById('chat-message').value;
-  if(!message){alert("Enter message - Owner Golden diamond 9");return;}
-  let r=await apiPost("/api/robot/chat",{robot_id,message});
-  document.getElementById('chat-result').innerHTML=`<b style="color:var(--gold)">${r.robot_id} - ${r.type} - Battery ${r.battery}% - ${r.status} - Tasks ${r.tasks} - Owner ${r.owner}</b><br>
-  <span style="color:var(--cyan)">You:</span> ${r.message}<br>
-  <span style="color:var(--purple)">Robot:</span> ${r.reply}<br>
-  <span style="font-size:10px;color:var(--muted)">Owner Golden diamond 9 - AI ROBOT - GPT-4o + Quantum Brain</span>`;
-  document.getElementById('log').innerHTML+=`<br>💬 Robot Chat: ${r.robot_id} - You: ${r.message} - Robot: ${r.reply.substring(0,80)}... - Owner Golden diamond 9`;
-}
-
-// ==================== DASHBOARD - OWNER GOLDEN DIAMOND 9 ====================
-async function loadDashboard(){
-  let d=await apiGet("/api/dashboard");
-  document.getElementById('dashboard').innerHTML=`<pre>${JSON.stringify(d,null,2)}</pre>`;
-  document.getElementById('p2p-stats').innerHTML=`<b>Owner ${d.owner}</b><br>Orders ${d.p2p?.orders||0} - Trades ${d.p2p?.trades||0} - Users ${d.p2p?.users||0}<br>Robots ${d.ai_robots?.count||0} - Tasks ${d.ai_robots?.total_tasks||0} - BRB Earned ${d.ai_robots?.total_brb||0} - UGAS AI Earned ${d.ai_robots?.total_ugas||0}<br>BRB Supply ${d.brb?.supply} - Owner Balance ${d.brb?.owner_balance} - UGAS AI Supply ${d.ugas_ai?.supply} - Owner Balance ${d.ugas_ai?.owner_balance}<br>Blocks ${d.blockchain?.blocks} - Validators ${d.blockchain?.validators} - Chain ${d.blockchain?.chain_id}`;
-}
-async function loadBlocks(){
-  let d=await apiGet("/api/blocks");
-  let html="";
-  (d.blocks||[]).reverse().forEach(b=>{
-    html+=`Block #${b.number} - ${b.validator} - ${b.task} - ${b.reward_brb} BRB + ${b.reward_ugas} UGAS AI - Hash ${b.hash.substring(0,16)}... - TX 0x${b.hash.substring(0,12)} - ${b.time} - Owner Golden diamond 9<br>`;
-  });
-  document.getElementById('blocks').innerHTML=html||"No blocks - Owner Golden diamond 9";
-}
-
-// ==================== P2P FUNCTIONS - OWNER GOLDEN DIAMOND 9 ====================
-async function loadOrders(){
-  let d=await apiGet("/api/p2p/orders");
-  let html="";
-  (d.orders||[]).reverse().forEach(o=>{
-    html+=`<div class="order ${o.type.toLowerCase()}"><b>${o.order_id}</b> - <span style="color:${o.type=='SELL'?'#ef4444':'#22c55e'}">${o.type}</span> ${o.amount} ${o.from_token} -> ${o.to_token} @ ${o.price} - Total ${o.total.toFixed(2)} ${o.to_token}<br><span class="badge gold">${o.username}</span> ${o.profile?.verified?'<span class="badge verified">VERIFIED</span>':''} <span class="badge">Rating ${o.profile?.rating}⭐</span> <span class="badge">Trades ${o.profile?.trades}</span> <span class="badge">${o.profile?.badges?.join(',')}</span> - ${o.payment_method} - ${o.status} - ${o.created}<br><button onclick="document.getElementById('trade-id').value='${o.order_id}'">Select Order - Trade - Owner Golden diamond 9</button></div>`;
-  });
-  document.getElementById('p2p-orders').innerHTML=html||"No orders - Create one - Owner Golden diamond 9 - P2P Infinity Better than Binance P2P";
-}
-function loadOrdersFiltered(filter){
-  apiGet("/api/p2p/orders").then(d=>{
-    let html="";
-    (d.orders||[]).filter(o=>o.from_token.includes(filter)||o.to_token.includes(filter)).reverse().forEach(o=>{
-      html+=`<div class="order ${o.type.toLowerCase()}"><b>${o.order_id}</b> - ${o.type} ${o.amount} ${o.from_token} -> ${o.to_token} @ ${o.price} - Total ${o.total.toFixed(2)} ${o.to_token} - ${o.username} - ${o.payment_method} - ${o.status}<br><button onclick="document.getElementById('trade-id').value='${o.order_id}'">Trade This - Filter ${filter} - Owner Golden diamond 9</button></div>`;
-    });
-    document.getElementById('p2p-orders').innerHTML=html||`No orders for filter ${filter} - Owner Golden diamond 9`;
-  });
-}
-async function loadTrades(){
-  let d=await apiGet("/api/p2p/trades");
-  let html="<b>P2P Trades - Owner Golden diamond 9 - P2P Infinity Better than Binance P2P:</b><br>";
-  (d.trades||[]).reverse().forEach(t=>{
-    html+=`${t.trade_id} - ${t.seller} -> ${t.buyer} - ${t.amount} ${t.from_token} -> ${t.to_token} = ${t.total.toFixed(2)} ${t.to_token} - ${t.status} - ${t.created} - Owner Golden diamond 9<br>`;
-  });
-  document.getElementById('p2p-trades').innerHTML=html;
-}
-async function createOrder(){
-  let username=document.getElementById('p2p-user').value||"Golden diamond 9";
-  let type=document.getElementById('p2p-type').value;
-  let from_token=document.getElementById('p2p-from').value;
-  let to_token=document.getElementById('p2p-to').value;
-  let amount=document.getElementById('p2p-amount').value;
-  let price=document.getElementById('p2p-price').value;
-  let payment=document.getElementById('p2p-payment').value;
-  let r=await apiPost("/api/p2p/create-order",{username,type,from_token,to_token,amount,price,payment});
-  document.getElementById('log').innerHTML+=`<br>💱 Order Created: ${r.order_id} - ${r.username} - ${r.type} ${r.amount} ${r.from_token} -> ${r.to_token} @ ${r.price} - Total ${r.total} ${r.to_token} - ${r.payment_method} - ${r.status} - Owner Golden diamond 9 - P2P Infinity Better than Binance P2P`;
-  loadOrders(); loadDashboard();
-}
-async function doTrade(){
-  let order_id=document.getElementById('trade-id').value;
-  let buyer=document.getElementById('trade-buyer').value;
-  let amount=document.getElementById('trade-amount').value;
-  if(!order_id){alert("Enter Order ID - Owner Golden diamond 9");return;}
-  let r=await apiPost("/api/p2p/trade",{order_id,buyer,amount});
-  if(r.error){alert(r.error);return;}
-  document.getElementById('log').innerHTML+=`<br>💱 Trade Executed: ${r.trade_id} - ${r.seller} -> ${r.buyer} - ${r.amount} ${r.from_token} -> ${r.to_token} = ${r.total.toFixed(2)} ${r.to_token} - ${r.status} - ${r.created} - Owner Golden diamond 9 - P2P Infinity`;
-  document.getElementById('p2p-trades').innerHTML+=`<br>${r.trade_id} - ${r.seller} -> ${r.buyer} - ${r.amount} ${r.from_token} -> ${r.to_token} = ${r.total.toFixed(2)} ${r.to_token} - ${r.status} - Owner Golden diamond 9`;
-  loadOrders(); loadDashboard();
-}
-async function mine(){
-  let validator=document.getElementById('mine-validator').value;
-  let task=document.getElementById('mine-task').value;
-  let r=await apiPost("/api/mine",{validator,task});
-  document.getElementById('blocks').innerHTML+=`<br>Block #${r.number} - ${r.validator} - ${r.task} - ${r.reward_brb} BRB + ${r.reward_ugas} UGAS AI - Hash ${r.hash.substring(0,16)}... - TX 0x${r.hash.substring(0,12)} - ${r.time} - Owner Golden diamond 9`;
-  document.getElementById('log').innerHTML+=`<br>⛏️ Block Mined: #${r.number} - ${r.validator} - ${r.task} - ${r.reward_brb} BRB + ${r.reward_ugas} UGAS AI - Hash ${r.hash.substring(0,16)}... - Owner Golden diamond 9`;
-  loadDashboard();
-}
-async function mint(){
-  let user=document.getElementById('mint-user').value;
-  let brb=document.getElementById('mint-brb').value;
-  let ugas=document.getElementById('mint-ugas').value;
-  let r=await apiPost("/api/mint",{user,brb,ugas});
-  document.getElementById('log').innerHTML+=`<br>✅ Mint: ${r.user} - ${r.brb} BRB + ${r.ugas} UGAS AI - Owner ${r.owner} - Golden diamond 9`;
-  loadDashboard();
-}
-
-// ==================== ON LOAD - OWNER GOLDEN DIAMOND 9 ====================
-window.onload=()=>{
-  loadRobots();
-  loadDashboard();
-  loadOrders();
-  loadBlocks();
-  console.log("BLACKRACK AI BLOCKCHAIN - Owner Golden diamond 9 - AI ROBOT FLEET - BRB + UGAS AI - P2P Infinity Better than Binance P2P - Clean Version - Full Complete - No Musa - No Hausa - English Only - Professional");
-  document.getElementById('log').innerHTML+=`<br>🌐 Page Loaded - Owner Golden diamond 9 - AI ROBOT Fleet 9 Robots Active - BRB 10M + UGAS AI 100M - P2P Infinity Better than Binance P2P - Blockchain One - Two Tokens Inside - Clean Version - Full Complete - No Musa - No Hausa - English Only - Professional - Final`;
-};
-</script>
+<div class="footer">GOLDEN DIAMOND 9 - Owner - BLACKRACK AI BLOCKCHAIN - Home Page - P2P Token to Naira + Future Buy Sell - Black + Purple Blue - Premium Fresh</div>
 </body>
-                                   </html>
+</html>
