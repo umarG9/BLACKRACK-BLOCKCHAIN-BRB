@@ -1,0 +1,395 @@
+/* curved-shapes.css - FRAME CURVE MAI SHAPES - NEW FILE - BLACK + PURPLE BLUE - PREMIUM FRESH */
+/* Owner: Golden diamond 9 - Language: CSS - English Only - No Hausa - Beautiful Design - Kattaba Tar - No Mistake */
+
+:root {
+  --black: #000000;
+  --purple: #a855f7;
+  --blue: #00e5ff;
+  --gold: #d4af37;
+  --green: #22c55e;
+  --border: #222222;
+  --purple-glow: rgba(168, 85, 247, 0.3);
+  --blue-glow: rgba(0, 229, 255, 0.3);
+  --gold-glow: rgba(212, 175, 55, 0.2);
+}
+
+/* ===== CURVE FRAME - BASE - ALL FRAMES CURVED WITH SHAPES ===== */
+.curve-frame {
+  border-radius: 30px 10px 30px 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #222;
+  background: linear-gradient(135deg, rgba(17,17,17,0.95) 0%, rgba(15,10,25,0.98) 100%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+  padding: 20px;
+}
+
+.curve-frame:hover {
+  border-radius: 10px 30px 10px 30px;
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 30px rgba(168,85,247,0.15);
+}
+
+/* ===== SHAPE VARIANTS - CURVED FRAMES ===== */
+.curve-frame.shape-1 {
+  border-radius: 40px 5px 40px 5px;
+  border: 1px solid #a855f7;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 25px rgba(168,85,247,0.15);
+}
+
+.curve-frame.shape-1:hover {
+  border-radius: 5px 40px 5px 40px;
+}
+
+.curve-frame.shape-2 {
+  border-radius: 50px 15px 5px 50px;
+  border: 1px solid #00e5ff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 25px rgba(0,229,255,0.15);
+}
+
+.curve-frame.shape-2:hover {
+  border-radius: 15px 50px 50px 5px;
+}
+
+.curve-frame.shape-3 {
+  border-radius: 20px 40px 20px 40px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(135deg, #a855f7, #00e5ff) 1;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 25px rgba(168,85,247,0.15), 0 0 25px rgba(0,229,255,0.15);
+}
+
+.curve-frame.shape-3:hover {
+  border-radius: 40px 20px 40px 20px;
+}
+
+.curve-frame.shape-gold {
+  border-radius: 30px 10px 50px 5px;
+  border: 1px solid #d4af37;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 25px rgba(212,175,55,0.15);
+}
+
+.curve-frame.shape-gold:hover {
+  border-radius: 5px 50px 5px 30px;
+}
+
+.curve-frame.shape-green {
+  border-radius: 10px 50px 10px 50px;
+  border: 1px solid #22c55e;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 25px rgba(34,197,94,0.15);
+}
+
+.curve-frame.shape-green:hover {
+  border-radius: 50px 10px 50px 10px;
+}
+
+/* ===== CURVED IMAGE FRAMES - WITH SHAPES ===== */
+.curve-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 30px 10px 30px 10px;
+  transition: all 0.4s ease;
+  border: 1px solid #222;
+}
+
+.curve-image:hover {
+  border-radius: 10px 30px 10px 30px;
+  transform: scale(1.02);
+}
+
+.curve-image.shape-1 {
+  border-radius: 40px 5px 40px 5px;
+  border-color: #a855f7;
+  box-shadow: 0 0 20px rgba(168,85,247,0.2);
+}
+
+.curve-image.shape-1:hover {
+  border-radius: 5px 40px 5px 40px;
+  box-shadow: 0 0 30px rgba(168,85,247,0.3);
+}
+
+.curve-image.shape-2 {
+  border-radius: 50px 15px 5px 50px;
+  border-color: #00e5ff;
+  box-shadow: 0 0 20px rgba(0,229,255,0.2);
+}
+
+.curve-image.shape-2:hover {
+  border-radius: 15px 50px 50px 5px;
+  box-shadow: 0 0 30px rgba(0,229,255,0.3);
+}
+
+.curve-image.shape-3 {
+  border-radius: 20px 40px 20px 40px;
+  border-color: #d4af37;
+  box-shadow: 0 0 20px rgba(212,175,55,0.15);
+}
+
+.curve-image.shape-3:hover {
+  border-radius: 40px 20px 40px 20px;
+  box-shadow: 0 0 30px rgba(212,175,55,0.25);
+}
+
+/* ===== BLOB SHAPE - ORGANIC CURVE - ANIMATED ===== */
+.blob-frame {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  border: 1px solid #a855f7;
+  background: linear-gradient(135deg, rgba(17,17,17,0.95) 0%, rgba(20,10,30,0.98) 100%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 30px rgba(168,85,247,0.2);
+  overflow: hidden;
+  transition: all 0.6s ease;
+  animation: blob-float 6s ease-in-out infinite;
+  position: relative;
+}
+
+.blob-frame:hover {
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  transform: scale(1.02);
+}
+
+@keyframes blob-float {
+  0%, 100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    transform: translateY(-5px) scale(1.01);
+  }
+}
+
+/* ===== WAVE SHAPE FRAME - BOTTOM CURVED ===== */
+.wave-frame {
+  border-radius: 0 0 40px 40px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #00e5ff;
+  border-top: none;
+  background: linear-gradient(180deg, rgba(17,17,17,0.95) 0%, rgba(10,15,25,0.98) 100%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 25px rgba(0,229,255,0.15);
+  padding: 24px;
+  transition: all 0.4s ease;
+}
+
+.wave-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0,229,255,0.1) 100%);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+
+.wave-frame:hover {
+  border-radius: 0 0 60px 60px;
+  transform: translateY(-2px);
+}
+
+/* ===== DIAMOND CURVE - 9 SHAPE - ANIMATED FLOAT ===== */
+.diamond-curve {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #d4af37 0%, #a855f7 50%, #00e5ff 100%);
+  transform: rotate(45deg);
+  border-radius: 30px 10px 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(168,85,247,0.3), 0 0 60px rgba(0,229,255,0.2);
+  transition: all 0.4s ease;
+  margin: 30px auto;
+  animation: diamond-curve-float 4s ease-in-out infinite;
+}
+
+.diamond-curve:hover {
+  border-radius: 10px 30px 10px 30px;
+  transform: rotate(45deg) scale(1.05);
+}
+
+.diamond-curve span {
+  transform: rotate(-45deg);
+  color: #000;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+@keyframes diamond-curve-float {
+  0%, 100% {
+    transform: rotate(45deg) translateY(0);
+    border-radius: 30px 10px 30px 10px;
+  }
+  50% {
+    transform: rotate(45deg) translateY(-8px);
+    border-radius: 10px 30px 10px 30px;
+  }
+}
+
+/* ===== CARD - OVERRIDE - ALL CARDS CURVED WITH SHAPES ===== */
+.card {
+  border-radius: 30px 10px 30px 10px !important;
+  transition: all 0.4s ease !important;
+}
+
+.card:hover {
+  border-radius: 10px 30px 10px 30px !important;
+  transform: translateY(-3px) !important;
+}
+
+.card.blue {
+  border-radius: 40px 5px 40px 5px !important;
+}
+
+.card.blue:hover {
+  border-radius: 5px 40px 5px 40px !important;
+}
+
+.card.purple {
+  border-radius: 50px 15px 5px 50px !important;
+}
+
+.card.purple:hover {
+  border-radius: 15px 50px 50px 5px !important;
+}
+
+.card.gradient {
+  border-radius: 20px 40px 20px 40px !important;
+}
+
+.card.gradient:hover {
+  border-radius: 40px 20px 40px 20px !important;
+}
+
+.card.gold {
+  border-radius: 30px 10px 50px 5px !important;
+}
+
+.card.gold:hover {
+  border-radius: 5px 50px 5px 30px !important;
+}
+
+/* ===== VISUAL - IMAGES CURVED WITH SHAPES ===== */
+.visual {
+  border-radius: 30px 10px 30px 10px !important;
+  transition: all 0.4s ease !important;
+}
+
+.visual:hover {
+  border-radius: 10px 30px 10px 30px !important;
+  transform: scale(1.02) !important;
+}
+
+.visual.blue {
+  border-radius: 40px 5px 40px 5px !important;
+}
+
+.visual.blue:hover {
+  border-radius: 5px 40px 5px 40px !important;
+}
+
+.visual.purple {
+  border-radius: 50px 15px 5px 50px !important;
+}
+
+.visual.purple:hover {
+  border-radius: 15px 50px 50px 5px !important;
+}
+
+.visual.gradient {
+  border-radius: 20px 40px 20px 40px !important;
+}
+
+.visual.gradient:hover {
+  border-radius: 40px 20px 40px 20px !important;
+}
+
+/* ===== HEADER - CURVED WITH SHAPES ===== */
+.header {
+  border-radius: 40px 10px 40px 10px !important;
+  transition: all 0.4s ease !important;
+}
+
+.header:hover {
+  border-radius: 10px 40px 10px 40px !important;
+}
+
+/* ===== FOOTER - CURVED WITH SHAPES ===== */
+.footer {
+  border-radius: 30px 10px 30px 10px !important;
+  transition: all 0.4s ease !important;
+}
+
+.footer:hover {
+  border-radius: 10px 30px 10px 30px !important;
+}
+
+/* ===== BUTTONS - CURVED WITH SHAPES ===== */
+button {
+  border-radius: 15px 5px 15px 5px !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover {
+  border-radius: 5px 15px 5px 15px !important;
+}
+
+button.blue {
+  border-radius: 20px 5px 20px 5px !important;
+}
+
+button.blue:hover {
+  border-radius: 5px 20px 5px 20px !important;
+}
+
+button.purple {
+  border-radius: 25px 8px 5px 25px !important;
+}
+
+button.purple:hover {
+  border-radius: 8px 25px 25px 5px !important;
+}
+
+/* ===== BADGE - CURVED WITH SHAPES ===== */
+.badge {
+  border-radius: 20px 5px 20px 5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.badge:hover {
+  border-radius: 5px 20px 5px 20px !important;
+}
+
+/* ===== RESPONSIVE - CURVED SHAPES MOBILE ===== */
+@media (max-width: 900px) {
+  .curve-frame,
+  .card,
+  .visual,
+  .header,
+  .footer {
+    border-radius: 20px 8px 20px 8px !important;
+  }
+  
+  .curve-frame:hover,
+  .card:hover,
+  .visual:hover,
+  .header:hover,
+  .footer:hover {
+    border-radius: 8px 20px 8px 20px !important;
+  }
+  
+  .diamond-curve {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .diamond-curve span {
+    font-size: 36px;
+  }
+  
+  .blob-frame {
+    border-radius: 25% 75% 75% 25% / 25% 25% 75% 75% !important;
+  }
+}
