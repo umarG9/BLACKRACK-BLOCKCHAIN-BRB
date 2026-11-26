@@ -1,0 +1,262 @@
+/* project-style-exact.css - INASO KAMAIN IRIN STYLE DIN SAK PROJECT DINA STYLE DIN HAKA NAKESO YAKOMA - PROJECT DINA DUKA STYLE HAKA YAKOMA - BLACK STONE SLAB GOLD PURPLE - EXACT KAMAR HOTON DAKA TUROMIN - Owner Golden diamond 9 - English Only - Kattaba Tar */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800;900&family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --black: #02020a;
+  --black-stone: #0a0a0f;
+  --black-stone-light: #11111a;
+  --gold: #d4af37;
+  --gold-light: #f5d76e;
+  --gold-dark: #b8962e;
+  --purple: #a855f7;
+  --purple-dark: #7c3aed;
+  --blue: #00e5ff;
+  --green: #22c55e;
+  --fire: #ff4500;
+  --text-primary: #c4b5e0;
+  --text-secondary: #8a7aa8;
+  --text-muted: #666;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #02020a !important;
+  background-image: radial-gradient(ellipse at 20% 50%, rgba(30,20,80,0.4) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(168,85,247,0.15) 0%, transparent 50%), radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.8) 0%, transparent 70%) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  padding: 20px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  line-height: 1.6 !important;
+}
+
+/* ===== ALL CARDS - PROJECT DINA DUKA - BLACK STONE SLAB GOLD PURPLE - EXACT KAMAR HOTON ===== */
+.card, .frame, .fire-p2p-center, .alien-stocks-center, .alien-predictions-center, .fire-card, .curve-frame, .header, .footer, .alien-stocks-center, .fire-p2p-center, .black-stone-slab, .ornate-frame, div[class*="frame"], div[class*="card"], section, article, main > div, .container > div {
+  background: #0a0a0f !important;
+  background-image: radial-gradient(ellipse at 30% 20%, rgba(40,30,60,0.4) 0%, transparent 50%), linear-gradient(180deg, #11111a 0%, #0a0a12 100%) !important;
+  border: 1px solid rgba(212,175,55,0.25) !important;
+  border-radius: 16px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow: 0 0 0 1px rgba(212,175,55,0.1), 0 8px 32px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.03) !important;
+  padding: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+/* GOLD PURPLE NEON BORDER - HOVER - KAMAR HOTON */
+.card:hover, .frame:hover, div[class*="frame"]:hover {
+  border-color: rgba(212,175,55,0.4) !important;
+  box-shadow: 0 0 0 1px rgba(212,175,55,0.2), 0 0 20px rgba(212,175,55,0.15), 0 12px 40px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.05) !important;
+  transform: translateY(-2px) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* CORNER DIAMONDS - KAMAR HOTON - EXACT */
+.card::after, .frame::after {
+  content: '◊' !important;
+  position: absolute !important;
+  top: 8px !important;
+  right: 12px !important;
+  color: rgba(212,175,55,0.3) !important;
+  font-size: 10px !important;
+  opacity: 0.6 !important;
+}
+
+/* ===== ALL HEADINGS - PROJECT DINA DUKA - CINZEL GOLD GRADIENT - EXACT KAMAR HOTON ===== */
+h1, h2, h3, h4, h5, h6, .header h1, .card h2, .frame h2, .fire-p2p-title, .alien-stocks-title, .alien-predictions-title, div[class*="title"] {
+  font-family: 'Cinzel', serif !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  background: linear-gradient(135deg, #d4af37 0%, #f5d76e 30%, #d4af37 60%, #a855f7 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-shadow: 0 0 30px rgba(212,175,55,0.3) !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+}
+
+h1 { font-size: 28px !important; font-weight: 900 !important; letter-spacing: 3px !important; }
+h2 { font-size: 20px !important; position: relative !important; padding-bottom: 12px !important; }
+h2::after { content: '' !important; position: absolute !important; bottom: 0 !important; left: 0 !important; width: 60px !important; height: 2px !important; background: linear-gradient(90deg, #d4af37 0%, #a855f7 100%) !important; box-shadow: 0 0 10px rgba(212,175,55,0.5) !important; }
+h3 { font-size: 16px !important; }
+
+/* ===== ALL TEXT - PROJECT DINA DUKA - PURPLE LIGHT - EXACT KAMAR HOTON ===== */
+p, span, div, li, td, th, label, .fire-p2p-desc, .alien-stocks-desc, .alien-predictions-desc, .card p, .frame p {
+  font-family: 'Inter', sans-serif !important;
+  color: #c4b5e0 !important;
+  font-size: 12px !important;
+  line-height: 1.7 !important;
+}
+
+small, .stat-label, .badge, .owner-badge, .header p, .footer, .predict-desc, .stock-sub {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 9px !important;
+  letter-spacing: 2px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #8a7aa8 !important;
+}
+
+/* BADGES - GOLD - KAMAR HOTON - EXACT */
+.badge, .owner-badge, .header-badge, span[class*="badge"], div[class*="badge"] {
+  background: linear-gradient(135deg, rgba(212,175,55,0.12) 0%, rgba(168,85,247,0.12) 100%) !important;
+  border: 1px solid rgba(212,175,55,0.3) !important;
+  border-radius: 20px !important;
+  padding: 6px 14px !important;
+  color: #d4af37 !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 9px !important;
+  letter-spacing: 1px !important;
+  font-weight: 800 !important;
+  display: inline-block !important;
+  margin: 4px !important;
+}
+
+.badge.gold { color: #f5d76e !important; border-color: #d4af37 !important; }
+.badge.purple { color: #a855f7 !important; border-color: #a855f7 !important; background: rgba(168,85,247,0.12) !important; }
+.badge.blue { color: #00e5ff !important; border-color: #00e5ff !important; background: rgba(0,229,255,0.08) !important; }
+.badge.green { color: #22c55e !important; border-color: #22c55e !important; background: rgba(34,197,94,0.08) !important; }
+.badge.fire { color: #ff4500 !important; border-color: #ff4500 !important; background: rgba(255,69,0,0.08) !important; }
+
+/* STATS - KAMAR HOTON - EXACT */
+.stat, div[class*="stat"], .stat-box, .fstat, .fstat-box {
+  background: rgba(0,0,0,0.6) !important;
+  border: 1px solid rgba(212,175,55,0.15) !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+  text-align: center !important;
+}
+
+.stat-label { color: #8a7aa8 !important; font-size: 9px !important; }
+.stat-value { font-family: 'Cinzel', serif !important; font-size: 11px !important; font-weight: 800 !important; margin-top: 4px !important; color: #f5d76e !important; }
+
+/* BUTTONS - KAMAR HOTON - GOLD - EXACT */
+button, a[class*="btn"], .buy-btn, input[type="button"], input[type="submit"], a[href] {
+  font-family: 'Cinzel', serif !important;
+  font-size: 10px !important;
+  letter-spacing: 1px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  background: linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(168,85,247,0.15) 100%) !important;
+  border: 1px solid rgba(212,175,55,0.3) !important;
+  color: #d4af37 !important;
+  padding: 10px 18px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  transition: all 0.3s !important;
+}
+
+button:hover, a[class*="btn"]:hover, .buy-btn:hover {
+  background: linear-gradient(135deg, rgba(212,175,55,0.25) 0%, rgba(168,85,247,0.25) 100%) !important;
+  border-color: #d4af37 !important;
+  box-shadow: 0 0 20px rgba(212,175,55,0.3) !important;
+  transform: translateY(-1px) !important;
+  color: #f5d76e !important;
+}
+
+/* INPUTS - KAMAR HOTON - BLACK STONE GOLD - EXACT */
+input, textarea, select {
+  background: rgba(10,10,15,0.8) !important;
+  border: 1px solid rgba(212,175,55,0.2) !important;
+  color: #c4b5e0 !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* GRID - PROJECT DINA DUKA - NORMAL - KAMAR HOTON */
+.grid-2, .grid-normal { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 20px !important; margin-bottom: 20px !important; }
+.grid-3 { display: grid !important; grid-template-columns: 1fr 1fr 1fr !important; gap: 16px !important; margin-bottom: 20px !important; }
+.grid-4 { display: grid !important; grid-template-columns: 1fr 1fr 1fr 1fr !important; gap: 12px !important; margin-bottom: 20px !important; }
+
+/* HEADER - PROJECT DINA - BLACK STONE SLAB - EXACT KAMAR HOTON */
+.header {
+  text-align: center !important;
+  padding: 28px 20px !important;
+  background: #0a0a0f !important;
+  background-image: radial-gradient(ellipse at 30% 20%, rgba(40,30,60,0.4) 0%, transparent 50%), linear-gradient(180deg, #11111a 0%, #0a0a12 100%) !important;
+  border: 1px solid rgba(212,175,55,0.25) !important;
+  border-radius: 16px !important;
+  margin-bottom: 20px !important;
+  position: relative !important;
+}
+
+.header::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 10% !important;
+  right: 10% !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent 0%, #d4af37 20%, #a855f7 50%, #d4af37 80%, transparent 100%) !important;
+  opacity: 0.6 !important;
+}
+
+/* DIAMOND - GOLD - KAMAR HOTON */
+.diamond {
+  width: 64px !important;
+  height: 64px !important;
+  background: radial-gradient(circle at 30% 30%, rgba(212,175,55,0.3) 0%, rgba(10,10,15,0.9) 100%) !important;
+  border: 1px solid rgba(212,175,55,0.5) !important;
+  transform: rotate(45deg) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 12px !important;
+  margin: 0 auto 16px !important;
+  box-shadow: 0 0 20px rgba(212,175,55,0.3), inset 0 1px 0 rgba(255,255,255,0.1) !important;
+}
+
+.diamond span {
+  transform: rotate(-45deg) !important;
+  color: #d4af37 !important;
+  font-family: 'Cinzel', serif !important;
+  font-weight: 900 !important;
+  font-size: 28px !important;
+  text-shadow: 0 0 10px rgba(212,175,55,0.5) !important;
+}
+
+/* FOOTER - OBSERVATORY RECORD - KAMAR HOTON - EXACT */
+.footer, footer {
+  text-align: center !important;
+  padding: 18px 20px !important;
+  border-top: 1px solid rgba(212,175,55,0.12) !important;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(10,8,15,0.6) 100%) !important;
+  border-radius: 16px !important;
+  margin-top: 24px !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 9px !important;
+  letter-spacing: 2px !important;
+  color: #666 !important;
+  position: relative !important;
+}
+
+.footer::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -1px !important;
+  left: 20% !important;
+  right: 20% !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent 0%, #a855f7 50%, transparent 100%) !important;
+  opacity: 0.5 !important;
+}
+
+/* SCROLLBAR - GOLD PURPLE - KAMAR HOTON */
+* { scrollbar-width: thin !important; scrollbar-color: #d4af37 #0a0a0f !important; }
+::-webkit-scrollbar { width: 8px !important; height: 8px !important; }
+::-webkit-scrollbar-track { background: #0a0a0f !important; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #d4af37 0%, #a855f7 100%) !important; border-radius: 4px !important; }
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #f5d76e 0%, #a855f7 100%) !important; }
+
+@media (max-width: 900px) {
+  .grid-2, .grid-3, .grid-4, .grid-normal { grid-template-columns: 1fr !important; }
+  h1 { font-size: 22px !important; }
+  h2 { font-size: 18px !important; }
+}q
